@@ -1,0 +1,4 @@
+AuthName "Page protégée mon beau doge !"
+AuthType "Basic"
+AuthUserFile "/home/yeuropeorv/www/admin/.htpasswd"
+Require valid-user
