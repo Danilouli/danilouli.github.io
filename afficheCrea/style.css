@@ -31,19 +31,6 @@ html {
 	width: 100%;
 }
 
-#crea { 
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 100%;
-}
-#crea img { 
-	position: absolute;
-	width: 25%;
-	height: 35%;
-}
-
 #bulle1 { 
 	position: absolute;
 	top: 8%;
@@ -68,6 +55,40 @@ html {
 	border-top: 3vw solid rgba(255,255,255,0.8);
 	border-bottom: 1.5vw solid transparent;
 	border-right: 1.5vw solid transparent;
+}
+
+#crea { 
+	position: absolute;
+	top: 8%;
+	right: 47%;
+	width: 20vw;
+	height: 12vw;
+	border-radius: 50px;
+	background-color: rgba(255,255,255,0.8);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: "Comic Sans MS";
+	font-size: 30px;
+	padding-top: calc(5vw - 15px);
+	-webkit-transform: rotate(10deg);
+}
+#crea::before { 
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	border-top: 1.5vw solid rgba(255,255,255,0.8);
+	border-bottom: 1.5vw solid transparent;
+	border-right: 3vw solid transparent;
+}
+#crea img { 
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
 }
 
 #infos { 
