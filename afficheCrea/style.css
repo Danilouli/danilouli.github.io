@@ -31,6 +31,19 @@ html {
 	width: 100%;
 }
 
+#crea { 
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	bottom: 0;
+}
+#crea img { 
+	position: absolute;
+	width: 25%;
+	height: 35%;
+}
+
 #bulle1 { 
 	position: absolute;
 	top: 8%;
