@@ -908,7 +908,8 @@
 
 		function getCSSNumberProperty(DOMElement,CSSProperty) { 
 			var schmurz = window.getComputedStyle(DOMElement);
-			return parseFloat(schmurz[CSSProperty]);
+			y = parseInt(schmurz[CSSProperty]);
+			return y;
 		}
 		function getCSSNaNProperty(DOMElement,CSSProperty) { 
 			var schmurz = window.getComputedStyle(DOMElement);

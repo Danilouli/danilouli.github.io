@@ -1,0 +1,98 @@
+	@font-face { font-family: "BebasNeueBold"; 	src: url('BebasNeueBold.ttf'); }
+	@font-face { font-family: "BebasNeueBook"; 	src: url('BebasNeueBook.ttf'); }
+	@font-face { font-family: "BebasNeueLight"; src: url('BebasNeueLight.ttf'); }
+	@font-face { font-family: "BebasNeueRegular"; src: url('BebasNeueRegular.ttf'); }
+	@font-face { font-family: "BebasNeueThin"; 	src: url('BebasNeueThin.ttf'); }
+
+body {
+    background-attachment:fixed;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+	overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+html { 
+	height: 100%;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+#title { 
+	position: absolute;
+	font-size: 200px;
+	letter-spacing: 1px;
+	color: #013571;
+	top: 70px;
+	width: 100%;
+	text-align: center;
+	font-family: "BebasNeueBold";
+}
+
+#timeToVote { 
+	position: absolute;
+	top: 375px;
+	font-size: 120px;
+	color: #4F81BD;
+	letter-spacing: 1px;
+	width: 100%;
+	text-align: center;
+	font-family: "Arial";
+	vertical-align: text-top;
+}
+
+#littleBoxes { 
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	top: 600px;
+	text-align: center;
+	vertical-align: text-top;
+}
+.littleBox { 
+	position: relative;
+	display: inline-block;
+	height: 250px;
+	margin-top: 25px;
+	width: 30%;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 100px;
+	color: #013571;
+	font-family: "BebasNeueBook";
+	vertical-align: text-top;
+}
+
+#deadLine { 
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 1000px;
+	font-size: 90px;
+	font-family: "BebasNeueBook";
+	color: #4F81BD;
+}
+
+#ifInterested {
+	position: absolute;
+	top: 1200px;
+	width: 100%;
+	font-family: "Arial";
+	color: #4F81BD;
+	font-size: 45px;
+	text-align: center;
+}
+
+#agoraLogo { 
+	position: absolute;
+	top: 1300px;
+	width: 100%;
+	text-align: center;
+}
+
+
+
