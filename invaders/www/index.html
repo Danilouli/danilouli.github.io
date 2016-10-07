@@ -74,22 +74,211 @@
 
 			<!-- Articles -->
 			<div id="content_arts" class="content_element ANIMcontent">
-				AHHHHHHHHHHHHH
+				<div id="content_arts_btns">
+					<a href="#" id="content_arts_instBtn" class="content_arts_btn">Institutions et Démocratie</a>
+					<a href="#" id="content_arts_ecoBtn" class="content_arts_btn">Economie et social </a>
+					<a href="#" id="content_arts_innovBtn" class="content_arts_btn">Innovation et Modernité</a>
+					<a href="#" id="content_arts_defBtn" class="content_arts_btn">Défense et Diplomatie</a>
+					<a href="#" id="content_arts_cultBtn" class="content_arts_btn">Culture</a>
+				</div>
+				<div id="content_arts_elements">			
+					<!--Partie sur les institutions et la démo-->
+						<div id="content_arts_inst" class="content_arts_element ANIMarts" subj="inst">
+							<div class="content_arts_element_prop">
+							 	<div class="content_arts_element_prop_title">
+							 		<div class="content_arts_element_prop_title_name">L'Europe à la carte</div> 
+							 		<div class="content_arts_element_prop_title_voteNumber">12 votes</div>
+							 		<a href="#" class="content_arts_element_prop_title_check">
+							 			<i class="fa fa-plus" aria-hidden="true"></i>
+							 		</a>
+							 	</div>
+							 	<div class="content_arts_element_prop_summary">
+							 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos adipisci numquam ducimus harum animi aliquam autem. Quos quod rerum aliquam placeat possimus asperiores ut iure beatae dolor, harum, dicta sapiente!
+							 	</div>
+							 	<div class="content_arts_element_prop_modal"></div>
+							</div> 
+						</div>		
+					
+					<!--Partie sur l'éco-->
+						<div id="content_arts_eco" class="content_arts_element ANIMarts" subj="eco">
+								<div class="content_arts_element_prop">
+								 	<div class="content_arts_element_prop_title">
+								 		<div class="content_arts_element_prop_title_name">Pour une nouvelle constitution Européenne</div> 
+								 		<div class="content_arts_element_prop_title_voteNumber">12 votes</div>
+								 		<a href="#" class="content_arts_element_prop_title_check">
+								 			<i class="fa fa-plus" aria-hidden="true"></i>
+								 		</a>
+								 	</div>
+								 	<div class="content_arts_element_prop_summary">
+								 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos adipisci numquam ducimus harum animi aliquam autem. Quos quod rerum aliquam placeat possimus asperiores ut iure beatae dolor, harum, dicta sapiente!
+								 	</div>
+								 	<div class="content_arts_element_prop_modal"></div>
+								</div> 
+						</div>
+
+					<!--Partie sur l'innov-->
+						<div id="content_arts_innov" class="content_arts_element ANIMarts" subj="innov">
+							<div class="content_arts_element_prop">
+							 	<div class="content_arts_element_prop_title">
+							 		<div class="content_arts_element_prop_title_name">Créer les champions de demain</div> 
+							 		<div class="content_arts_element_prop_title_voteNumber">12 votes</div>
+							 		<a href="#" class="content_arts_element_prop_title_check">
+							 			<i class="fa fa-plus" aria-hidden="true"></i>
+							 		</a>
+							 	</div>
+							 	<div class="content_arts_element_prop_summary">
+							 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos adipisci numquam ducimus harum animi aliquam autem. Quos quod rerum aliquam placeat possimus asperiores ut iure beatae dolor, harum, dicta sapiente!
+							 	</div>
+							 	<div class="content_arts_element_prop_modal"></div>
+							</div> 
+						</div>
+
+					<!--Partie sur la défense-->
+						<div id="content_arts_def" class="content_arts_element ANIMarts" subj="def">
+							<div class="content_arts_element_prop">
+							 	<div class="content_arts_element_prop_title">
+							 		<div class="content_arts_element_prop_title_name">L'Europe de la défense</div> 
+							 		<div class="content_arts_element_prop_title_voteNumber">12 votes</div>
+							 		<a href="#" class="content_arts_element_prop_title_check">
+							 			<i class="fa fa-plus" aria-hidden="true"></i>
+							 		</a>
+							 	</div>
+							 	<div class="content_arts_element_prop_summary">
+							 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos adipisci numquam ducimus harum animi aliquam autem. Quos quod rerum aliquam placeat possimus asperiores ut iure beatae dolor, harum, dicta sapiente!
+							 	</div>
+							 	<div class="content_arts_element_prop_modal"></div>
+							</div> 
+						</div>
+
+					<!--Partie sur la culture-->
+						<div id="content_arts_cult" class="content_arts_element ANIMarts" subj="cult">
+							<div class="content_arts_element_prop">
+							 	<div class="content_arts_element_prop_title">
+							 		<div class="content_arts_element_prop_title_name">Une éducation européenne</div> 
+							 		<div class="content_arts_element_prop_title_voteNumber">12 votes</div>
+							 		<a href="#" class="content_arts_element_prop_title_check">
+							 			<i class="fa fa-plus" aria-hidden="true"></i>
+							 		</a>
+							 	</div>
+							 	<div class="content_arts_element_prop_summary">
+							 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos adipisci numquam ducimus harum animi aliquam autem. Quos quod rerum aliquam placeat possimus asperiores ut iure beatae dolor, harum, dicta sapiente!
+							 	</div>
+							 	<div class="content_arts_element_prop_modal"></div>
+							</div> 
+						</div>
+
+					<!--Bouton de soumission d'une prop-->				
+						<a href="#" id="content_arts_elements_post"><i class="fa fa-pencil" aria-hidden="true"></i></a href="#">
+						<div id="content_arts_elements_infos" class="hide">Faire une proposition</div>	
+				</div>
+				<!--Formulaire qui apparait après un click sur #content_arts_elements_post-->	
+				<div id="content_arts_form" class="hide">
+					<input type="text" id="content_arts_form_titleInput" placeholder="Titre de ta proposition">
+					<select name="subject" id="content_arts_form_subjSelect">
+						<option value="inst">Institutions et Démocratie</option>
+						<option value="eco">Economie et social</option>
+						<option value="innov">Innovation et Modernité</option>
+						<option value="def">Défense et Diplomatie</option>
+						<option value="cult">Culture</option>
+					</select>
+					<textarea name="" id="content_arts_form_input" rows="20"></textarea>
+					<input id="content_arts_form_submit" type="submit" value="proposer">
+					<div id="content_arts_form_close"><i class="fa fa-close"></i></div>
+				</div>
+				<div id="content_arts_secondForm" class="hide">
+					<div id="content_arts_secondForm_title">Avant de nous soummettre ta proposition, inscris toi, petit européen.</div>
+					<input type="text" id="content_arts_secondForm_mailInput" placeholder="Ton mail">
+					<input type="text" id="content_arts_secondForm_passwordInput" placeholder="Un mot de passe que tu peux retenir...">
+					<input id="content_arts_secondForm_submit" type="submit" value="proposer">
+					<div id="content_arts_secondForm_close"><i class="fa fa-close"></i></div>
+				</div>
+				<div id="content_arts_shade"></div>
 			</div>
 
 			<!-- Vidéos -->
 			<div id="content_vids" class="content_element ANIMcontent">
-				Espèce de patate douce
+				<div id="content_vids_container">
+					<div id="content_vids_container_title">Dernières publications</div>
+						<div id="content_vids_container_elements">
+							<div class="content_vids_container_element">
+								<div class="content_vids_container_element_date">21/07/2016</div>
+								<div class="content_vids_container_element_title">Pour une relance monétaire</div>
+							</div>
+							<div class="content_vids_container_element">
+								<div class="content_vids_container_element_date">21/07/2016</div>
+								<div class="content_vids_container_element_title">L'apprentissage sera européen ou ne sera pas ! </div>
+							</div>
+							<div class="content_vids_container_element">
+								<div class="content_vids_container_element_date">21/07/2016</div>
+								<div class="content_vids_container_element_title"> Une défense européenne ? </div>
+							</div>
+							<div class="content_vids_container_element">
+								<div class="content_vids_container_element_date">21/07/2016</div>
+								<div class="content_vids_container_element_title">Promouvoir une démocratie directe et participative</div>
+							</div>
+							<div class="content_vids_container_element">
+								<div class="content_vids_container_element_date">21/07/2016</div>
+								<div class="content_vids_container_element_title">Résoudre les crises identitaires</div>
+							</div>
+							<div class="content_vids_container_element">
+								<div class="content_vids_container_element_date">21/07/2016</div>
+								<div class="content_vids_container_element_title">Pour une éducation européenne</div>
+							</div>
+							<div class="content_vids_container_element">
+								<div class="content_vids_container_element_date">21/07/2016</div>
+								<div class="content_vids_container_element_title">Macron est content</div>
+							</div>							
+						</div>
+				</div>
 			</div>
 
 			<!-- Events -->	
 			<div id="content_evs" class="content_element ANIMcontent">
-				Chien, enragé au foie de volaille.
+				<div id="content_evs_container">
+					<div id="content_evs_container_title">Notre equipe</div>
+					<div id="content_evs_container_elements">
+						<div class="content_evs_container_element">
+							<div class="content_evs_container_element_title">Etienne</div>
+						</div>
+						<div class="content_evs_container_element">
+							<div class="content_evs_container_element_title">Corentin</div>
+						</div>
+						<div class="content_evs_container_element">
+							<div class="content_evs_container_element_title">Saul</div>
+						</div>
+						<div class="content_evs_container_element">
+							<div class="content_evs_container_element_title">Karen</div>
+						</div>
+						<div class="content_evs_container_element">
+							<div class="content_evs_container_element_title">Federico</div>
+						</div>
+						<div class="content_evs_container_element">
+							<div class="content_evs_container_element_title">Victoria</div>
+						</div>
+						<div class="content_evs_container_element">
+							<div class="content_evs_container_element_title">Maxime</div>
+						</div>
+						<div class="content_evs_container_element">
+							<div class="content_evs_container_element_title">Martin</div>
+						</div>
+						<div class="content_evs_container_element">
+							<div class="content_evs_container_element_title">Daniel</div>
+						</div>								
+					</div>
+				</div>
 			</div>
 
 			<!-- Contact -->
 			<div id="content_contact" class="content_element ANIMcontent">
-				Lililiputien
+				<div id="content_contact_title"></div>
+				<div id="content_contact_text"></div>
+				<div id="content_contact_form">
+					<input type="text" id="content_contact_form_name" placeholder="Prenom">
+					<input type="text" id="content_contact_form_age" placeholder="Age">
+					<input type="text" id="content_contact_form_country" placeholder="Pays">
+					<textarea id="content_contact_form_message"></textarea> 
+					<input type="submit" id="content_contact_form_submit">
+				</div>
 			</div>
 		</div>
 
