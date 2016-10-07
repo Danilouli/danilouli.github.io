@@ -1,6 +1,0 @@
-bleuClair : #0061FF
-bleufonce : #0C2671
-bleuNormal : #0022C0
-
-bleuEur : #44537F
-jauneEur : #EBC400
