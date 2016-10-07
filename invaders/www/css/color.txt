@@ -1,0 +1,7 @@
+orange1 : #FFAC09
+orange2 : #F67F12 rgb(246,127,18)
+orange3 : #E9531C
+orange4 : #F6930F
+
+bleu1 : #310767
+bleu2 : #1B003E
