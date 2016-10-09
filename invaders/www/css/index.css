@@ -492,7 +492,7 @@ ora {
 			background: -webkit-linear-gradient(left top, #310767, #310767 40%, #1B003E 40%, #1B003E);
 		}
 		#content_arts_jvs {
-			background: -webkit-linear-gradient(left bottom, #F67F12, #F67F12 27%, #E9531C 27%, #E9531C);
+			background: -webkit-linear-gradient(left bottom, #F67F12, #F67F12 35%, #E9531C 35%, #E9531C);
 		}
 		#content_arts_mangas {
 			background: -webkit-linear-gradient(right bottom, goldenrod, goldenrod 30%, gold 30%, gold);
@@ -530,7 +530,7 @@ ora {
 					background-image: url(../img/testFFXV.jpg);
 					background-position: 0% 20%;
 					cursor: pointer;
-					opacity: 0.65;
+					opacity: 0.80;
 					text-shadow: 0 0 10px black;
 				}
 				.content_arts_cat_art:hover, .content_arts_cat_art:active {
