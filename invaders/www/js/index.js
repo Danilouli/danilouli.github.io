@@ -31,12 +31,12 @@ document.addEventListener("DOMContentLoaded", function() {
 					function alternateNavBtn(btnNum) {
 						for(var i = 0; i<TABcontentEl.length; i++) {
 							if(i == btnNum) {
-								//TABcontentEl[i].isActive = true;
+								TABcontentEl[i].isActive = true;
 								TABcontentEl[i].navBtn.style.color = "#310767";
 								TABcontentEl[i].navBtn.style.textShadow = "0px 0px 10px white";
 							}
 							else {
-								//TABcontentEl[i].isActive = false;
+								TABcontentEl[i].isActive = false;
 								TABcontentEl[i].navBtn.style.color = "#1B003E";
 								TABcontentEl[i].navBtn.style.textShadow = "none";
 							}
@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
 			var TABcontentEl = new Array(classTab("ANIMcontent").length);
 			for(var i = 0; i < TABcontentEl.length; i++) {
 				TABcontentEl[i] = new ContentEl(classTab("ANIMcontent")[i]);
-				console.log(TABcontentEl[i].num);
 			}
 
 			
@@ -57,11 +56,13 @@ document.addEventListener("DOMContentLoaded", function() {
 						removeAddClass(content_home,"ANIMhome-topReplace","ANIMhome-topHiding");
 						removeAddClass(outside_navbar,"ANIMnavbar-resize","ANIMnavbar-shrink");
 						removeAddClass(outside_navbar_logo,"ANIMlogo-resize","ANIMlogo-shrink");
+						removeAddClass(outside_navbar_soc,"ANIMsoc-resize","ANIMsoc-shrink");
 					}
 					function hideContent() {
 						removeAddClass(content_home,"ANIMhome-topHiding","ANIMhome-topReplace");
 						removeAddClass(outside_navbar,"ANIMnavbar-shrink","ANIMnavbar-resize");
 						removeAddClass(outside_navbar_logo,"ANIMlogo-shrink","ANIMlogo-resize");
+						removeAddClass(outside_navbar_soc,"ANIMsoc-shrink","ANIMsoc-resize");
 						for(var i = 0; i<TABcontentEl.length; i++) {
 							TABcontentEl[i].isActive = false;
 							TABcontentEl[i].navBtn.style.color = "#1B003E";
@@ -90,39 +91,6 @@ document.addEventListener("DOMContentLoaded", function() {
 						}	
 					}
 
-			//Fonctions sur #content_props
-				//Variables sur #content_props
-				function SubjectPage(subject,subjDiv) {
-					this.subject = subject;
-					this.subjDiv = subjDiv;
-					this.TABprops = subjDiv.querySelectorAll(".content_props_element_prop");
-					this.TABpropsName = subjDiv.querySelectorAll(".content_props_element_prop_title_name");
-					this.TABpropsCheck = subjDiv.querySelectorAll(".content_props_element_prop_title_check");
-					this.TABpropsSummary = subjDiv.querySelectorAll(".content_props_element_prop_summary");
-					this.TABpropsVotes = subjDiv.querySelectorAll(".content_props_element_prop_title_voteNumber");
-				}
-
-				//Fonction de gestion de l'allumage des boutons pour les différents sujets de propositions sur #content_props
-					function alternatePropBtn(btnToKeep) {
-						for(var i = 0; i<TABbtnProps.length; i++) {
-							if(TABbtnProps[i] == btnToKeep) {
-								//TABbtnProps[i].isActive = true;
-								TABbtnProps[i].style.color = "#0C2671";
-							}
-							else {
-								//TABbtnProps[i].isActive = false;
-								TABbtnProps[i].style.color = "#44537F";
-							}
-						}
-					}
-
-				//Fonction d'EL pour bouger les pages de propositions de classe .content_props_element
-					function movePropsTo(btnNum) {
-						for(var j = 0; j<TABANIMprops.length; j++) {
-							TABANIMprops[j].style.webkitTransform = "translate3d(-"+ btnNum*100 +"%,0%,0)";
-						}	
-					}
-
 	//Ajout des event listeners
 		//ELs sur #outside_navbar		
 			for(var i = 0; i<TABcontentEl.length; i++) {
@@ -131,7 +99,6 @@ document.addEventListener("DOMContentLoaded", function() {
 						hoverNavBtn(num);
 					},false);
 					TABcontentEl[num].navBtn.addEventListener("mouseleave", function() {
-						console.log(TABcontentEl[num].isActive);
 						if(TABcontentEl[num].isActive != true) {
 							leaveNavBtn(num);
 						}
@@ -149,15 +116,6 @@ document.addEventListener("DOMContentLoaded", function() {
 				} 
 				addBtnEL(i);
 			}		
-			
-			// for(var i = 1; i<TABNavBtns.length; i++) {
-			// 	function addMoveEL(btnNum) {
-			// 		TABNavBtns[btnNum].navBtn.addEventListener("click", function() {
-			// 			moveContentTo(btnNum);
-			// 		},false);
-			// 	}
-			// 	addMoveEL(i);
-			// }
 
 			outside_navbar_logo.addEventListener("mouseover", function() { 
 				this.querySelector("img").setAttribute("src","img/logoHover.png");
@@ -180,67 +138,18 @@ document.addEventListener("DOMContentLoaded", function() {
 				hideContent();
 			},false);
 
-		//ELs sur #content_props
-			/*for(var i = 0; i<TABbtnProps.length; i++) {
-				function addMoveEL(btnNum) {
-					TABbtnProps[btnNum].addEventListener("click", function() {
-						movePropsTo(btnNum);
-					} ,false);
-				}
-				addMoveEL(i);
-			}
-
-			for(var i = 0; i<TABbtnProps.length; i++) {
-				function addBtnEL(btnNum) {
-					TABbtnProps[btnNum].addEventListener("click", function() {
-						alternatePropBtn(this);
-					},false)
-				}
-				addBtnEL(i);
-			}
-
-			//ELs pour faire changer la couleur et l'icone du bouton au survol #content_props_elements_post, faire apparaitre les infos #content_props_element_infos
-				content_props_elements_post.addEventListener("mouseover", function() {
-					this.querySelector("i").setAttribute("class","fa fa-pencil-square-o");
-					removeAddClass(content_props_elements_infos,"hide","show");
-				},false);
-				content_props_elements_post.addEventListener("mouseout", function() {
-					this.querySelector("i").setAttribute("class","fa fa-pencil");
-					removeAddClass(content_props_elements_infos,"show","hide");
+		//ELs sur #content_pres 
+			//pour avoir un déplacement avec les images en bas
+				content_pres_arts.addEventListener("click", function() {
+					moveContentTo(1);
 				},false);
 
-			//ELs pour faire apparaitre les form content_props_form et content_props_secondForm quand on clique #content_props_elements_post
-				content_props_elements_post.addEventListener("click", function() {
-					this.querySelector("i").setAttribute("class","fa fa-pencil");
-					removeAddClass(content_props_elements_infos,"show","hide");	
-					removeAddClass(content_props_form,"hide","show");
-					switchCSS(content_props_shade,"visibility","hidden","visible");
-				},false);
-				content_props_form_close.addEventListener("click", function() {
-					removeAddClass(content_props_form,"show","hide");
-					switchCSS(content_props_shade,"visibility","hidden","visible");			
+				content_pres_vids.addEventListener("click", function() {
+					moveContentTo(2);
 				},false);
 
-				content_props_form_submit.addEventListener("click", function() {
-					removeAddClass(content_props_form,"show","hide");
-					removeAddClass(content_props_secondForm,"hide","show");
+				content_pres_evs.addEventListener("click", function() {
+					moveContentTo(3);
 				},false);
-				content_props_secondForm_close.addEventListener("click",function() {
-					removeAddClass(content_props_secondForm,"show","hide");
-					switchCSS(content_props_shade,"visibility","hidden","visible");
-				},false); 
-
-			//ELs Ajax de #content_props, pour poster une prop, et les récup quand on clique sur le bouton des props
-				content_props_secondForm_submit.addEventListener("click", function() { 
-					postProp.go(content_props_secondForm_mailInput.value,content_props_secondForm_passwordInput.value,content_props_form_input.value,content_props_form_subjSelect.value,content_props_form_titleInput.value);
-				}, false); 
-
-				outside_navbar_propsBtn.addEventListener("click", function() {
-					getProps.go();
-				}, false);
-
-			// TABANIMcontent[2].addEventListener("transitionend",function() {
-			// 	console.log("hello");
-			// },false);*/
 			
 },false);
