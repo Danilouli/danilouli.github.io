@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() { 
 
+
+addBgLoadedEv(content_home);
+loadOnEvent(outside_loader,content_home,"bgLoaded",1000,"loaderTopHiding",500);
+
 	//Fonctions d'EL, AJAX, pour les différentes parties du site
 		//Variables sur #outside_navbar
 			TABNavBtns = classTab("outside_navbar_element");
@@ -108,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					var receivePropsOnLoad = new JSONReception(getProps, function() {getProps.go();},100,{
 						success : function() {
 							console.log(receivePropsOnLoad.dataReceived);
-							insertAllProps(receivePropsOnLoad.dataReceived);
+							//insertAllProps(receivePropsOnLoad.dataReceived);
 						}
 					});		
 

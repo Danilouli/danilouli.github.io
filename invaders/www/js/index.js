@@ -91,6 +91,12 @@ document.addEventListener("DOMContentLoaded", function() {
 						}	
 					}
 
+			//Fonctions sur #content_arts
+				var TABcontent_arts_cat_art = classTab("content_arts_cat_art");
+				for(var i = 0; i<TABcontent_arts_cat_art.length; i++) {
+					setCSSProperty(TABcontent_arts_cat_art[i],"--bgPosY", (i+1)*100/(TABcontent_arts_cat_art.length) + "%");
+				}
+
 	//Ajout des event listeners
 		//ELs sur #outside_navbar		
 			for(var i = 0; i<TABcontentEl.length; i++) {

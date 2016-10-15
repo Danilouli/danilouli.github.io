@@ -908,12 +908,21 @@
 
 		function getCSSNumberProperty(DOMElement,CSSProperty) { 
 			var schmurz = window.getComputedStyle(DOMElement);
-			y = parseInt(schmurz[CSSProperty]);
+			y = parseFloat(schmurz.getPropertyValue(CSSProperty));
 			return y;
 		}
 		function getCSSNaNProperty(DOMElement,CSSProperty) { 
 			var schmurz = window.getComputedStyle(DOMElement);
-			return schmurz[CSSProperty];
+			return schmurz.getPropertyValue(CSSProperty);
+		}
+
+		function setCSSProperty(DOMElement,CSSProperty,CSSValue) {
+			DOMElement.style.setProperty(CSSProperty,CSSValue);
+		}
+		function setMultipleCSSProperty(DOMElement,CSSProperties,CSSValues) {
+			for(var i = 0; i<CSSProperties.length; i++) {
+				setCSSProperty(DOMElement,CSSProperties[i],CSSValue[i]);
+			}
 		}
 
 	//Fonction qui retourne un tableau avec tous les éléments d'une classe

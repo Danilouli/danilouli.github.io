@@ -1,3 +1,12 @@
+.loaderTopHiding {
+	-webkit-transform: translate3d(0,-100%,0);
+	transform: translate3d(0,-100%,0);
+	-webkit-transition: transform 300ms linear;
+	transition: transform 300ms linear;
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: none;	
+}
+
 .topCollapsing { 
 -webkit-transform: translate3d(0,100%,0);
 transform: translate3d(0,100%,0);

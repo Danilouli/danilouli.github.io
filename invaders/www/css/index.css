@@ -13,6 +13,15 @@
 @font-face { font-family: "SourceSansProRegular"; src: url('../fonts/sourceSansPro/SourceSansProRegular.ttf'); }
 @font-face { font-family: "SourceSansProSemibold"; 	src: url('../fonts/sourceSansPro/SourceSansProSemibold.ttf'); }
 
+:root {
+	--orange1 : #FFAC09;
+	--orange2 : #F67F12;
+	--orange3 : #E9531C;
+	--orange4 : #F6930F;
+	--bleu1 : #310767;
+	--bleu2 : #1B003E;
+}
+
 body {
     font-family:'Antic','SourceSansProRegular';
     font-weight: lighter;
@@ -88,10 +97,10 @@ ora {
 			width: 101%;
 			font-size: 25px;
 			text-align: center;
-			background-color: #F67F12;
+			background-color: var(--orange2);
 			z-index: 30;
 			-webkit-box-sizing: border-box;
-			box-shadow: 0px 3px 5px #F67F12;
+			box-shadow: 0px 5px 30px var(--bleu2);
 		}
 		.ANIMnavbar-shrink { 
 			animation-duration: 0.45s;
@@ -244,7 +253,7 @@ ora {
 				letter-spacing: 1px;
 				line-height: 25px;
 				vertical-align: middle;
-				color: #1B003E;
+				color: var(--bleu2);
 				height: 100%;
 				margin-left: 15px;
 			}
@@ -252,13 +261,13 @@ ora {
 				position: relative;
 				text-decoration: none;
 				text-align: center;
-				color: #1B003E;
+				color: var(--bleu2);
 				margin-right: 10px;
 				letter-spacing: 1px;
 				-webkit-transition : text-shadow 0.25s;
 			}
 			a.outside_navbar_btns_element:hover, a.outside_navbar_btns_element:active { 
-				color: #310767;
+				color: var(--bleu1);
 				text-shadow: 0px 0px 10px white;
 			}
 	/*#outside_shade*/
@@ -315,7 +324,7 @@ ora {
 				text-align: center;
 				letter-spacing: 1.5px;
 				text-shadow: 0px 0px 1px white;
-				color: #F67F12;
+				color: var(--orange2);
 			}
 				.ANIMtitle-move { 
 					animation-duration: 5s;
@@ -371,11 +380,11 @@ ora {
 						text-shadow: 0px 0px 5px white;
 					}
 					50% { 
-						color: #1B003E;
+						color: var(--bleu2);
 						text-shadow: 0px 0px 10px white;
 					}
 					100% {
-						color: #F6930F;
+						color: var(--orange4);
 						text-shadow: 0px 0px 5px white;
 					}
 				}
@@ -417,7 +426,7 @@ ora {
 				padding-top: 75px;
 			}
 				#content_pres_intro h2 {
-					color : #F6930F;
+					color : var(--orange4);
 				}
 				#content_pres_intro p {
 					position: relative;
@@ -435,7 +444,7 @@ ora {
 				}
 			#content_pres_elements {
 				position: relative;
-				background: -webkit-linear-gradient(left top, #FFAC09, #FFAC09 40%, #F6930F 40%, #F6930F);
+				background: -webkit-linear-gradient(left top, var(--orange1), var(--orange1) 40%, var(--orange4) 40%, var(--orange4));
 				width: 100vw;
 				min-height: 100vh;
 				-webkit-box-sizing: border-box;
@@ -467,7 +476,7 @@ ora {
 				}
 				.content_pres_element h3 {
 					color: white;
-					text-shadow: 0px 0px 20px #1B003E;
+					text-shadow: 0px 0px 20px var(--bleu2);
 					display: block;
 					-webkit-box-sizing: border-box;
 					line-height: 15px;
@@ -489,10 +498,10 @@ ora {
 			background-color: white;
 		}
 		#content_arts_fresh {
-			background: -webkit-linear-gradient(left top, #310767, #310767 40%, #1B003E 40%, #1B003E);
+			background: -webkit-linear-gradient(left top, var(--bleu1), var(--bleu1) 40%, var(--bleu2) 40%, var(--bleu2));
 		}
 		#content_arts_jvs {
-			background: -webkit-linear-gradient(left bottom, #F67F12, #F67F12 35%, #E9531C 35%, #E9531C);
+			background: -webkit-linear-gradient(left bottom, var(--orange2), var(--orange2) 35%, var(--orange3) 35%, var(--orange3));
 		}
 		#content_arts_mangas {
 			background: -webkit-linear-gradient(right bottom, goldenrod, goldenrod 30%, gold 30%, gold);
@@ -518,7 +527,7 @@ ora {
 					font-family: "Starjedi";
 				}
 			/*.content_arts_cat_art*/
-				.content_arts_cat_art {
+				.content_arts_cat_art{
 					position: relative;
 					height: 15vh;
 					margin-bottom: 5vh;
@@ -527,18 +536,19 @@ ora {
 					margin-right: 20vw;
 					border-radius: 10px;
 					background-image: url(../img/testFFXV.jpg);
-					background-position: 0% 20%;
+					background-position-x: var(--bgPosX); 
+					background-position-y: var(--bgPosY);
 					cursor: pointer;
 					opacity: 0.80;
 					text-shadow: 0 0 10px black;
 					box-shadow: 0 0 10px black;
-					-webkit-transition: text-shadow 0.15s, opacity 0.15s, background-position 0.15s, box-shadow 0.15s;
+					-webkit-transition: text-shadow 0.2s, opacity 0.2s, background-position-y 0.2s, box-shadow 0.2s;
 				}
 				.content_arts_cat_art:hover, .content_arts_cat_art:active {
 					text-shadow: 0 0 20px black;
 					opacity: 1;
-					background-position: 0% 17.5%;
 					box-shadow: 0 0 15px black;
+					background-position-y: calc(var(--bgPosY) - 2.5%);
 				}
 					.content_arts_cat_art_name {
 						position: absolute;
@@ -617,7 +627,7 @@ ora {
 			#content_vids_lastVid h2 {
 				position: relative;
 				margin-top: 5vh;
-				color: #F6930F;
+				color: var(--orange4);
 				font-family: "Starjedi";		
 			}
 			#content_vids_lastVid h3 {
@@ -638,7 +648,7 @@ ora {
 					color: white;
 					font-family: "BebasNeueRegular";
 					letter-spacing: 1.5px;
-					background-color: #F6930F;
+					background-color: var(--orange4);
 					border-radius: 10px;
 					box-shadow: 0 0 2px white;
 					cursor: pointer;
@@ -647,8 +657,82 @@ ora {
 				.content_vids_lastVid_watchBtn:hover, .content_vids_lastVid_watchBtn:active {
 					border-radius: 0px;
 					box-shadow: 0 0 10px white;
-					background-color: #F67F12;
+					background-color: var(--orange2);
 				}
+			/*#content_vids_cats*/
+				#content_vids_cats {
+					position: absolute;
+					top: 75%;
+					width: 100%;
+				}
+				/*.content_vids_cat*/
+					.content_vids_cat {
+						width: 100vw;
+						position: relative;
+						display: block;
+						--bgCatColor: white;
+						background-color: var(--bgCatColor);
+						box-shadow: 0px 0px 25px var(--bgCatColor);
+						-webkit-box-sizing: border-box;
+						padding: 20px 0px 40px 0px;
+						margin: 80px 0px 80px 0px;
+					}
+					.content_vids_cat h2 {
+						position: relative;
+						width: 100%;
+						text-align: center;
+						margin-bottom: 10px;
+						font-family: "StarJedi";
+					}
+					#content_vids_cats_jvs h2 {
+						color: var(--orange2);
+						text-shadow: 2px 2px 2px var(--bleu2);
+					}
+					#content_vids_cats_jvs {
+						--bgCatColor: rgba(246,127,18,0.7);
+					} 
+					#content_vids_cats_mangas h2 {
+						color: gold;
+						text-shadow: 2px 2px 2px var(--bleu2);
+					} 
+					#content_vids_cats_mangas {
+						--bgCatColor: rgba(218,165,32,0.7);
+					}
+					#content_vids_cats_fantasy h2 {
+						color: dodgerblue;
+						text-shadow: 2px 2px 2px var(--bleu2);
+					} 
+					#content_vids_cats_fantasy {
+						--bgCatColor: rgba(30,144,255,0.7);						
+					}
+					.content_vids_cat .content_vids_cat_vid {
+						width: 19.25vw;
+						margin-right: 4vw;
+						position: relative;
+						display: inline-block;
+						border: none;
+						--vidTxtShad: 5px;
+						--vidBoxShad: 7.5px;
+						text-shadow: 0px 0px var(--vidTxtShad) white;
+						-webkit-transition: text-shadow 0.25s, box-shadow 0.25s;
+						cursor: pointer;
+					}
+					.content_vids_cat .content_vids_cat_vid:first-of-type {
+						margin-left: 4vw;
+					}
+					.content_vids_cat .content_vids_cat_vid iframe {
+						border: none;
+						box-shadow: 0px 0px var(--vidBoxShad) var(--bleu2);
+					}
+					.content_vids_cat .content_vids_cat_vid h3 {
+						text-align: center;
+						color: white;
+						margin-top: 10px;
+					}
+					.content_vids_cat_vid:hover, .content_vids_cat_vid:active {
+						--vidTxtShad : 10px;
+						--vidBoxShad: 15px;
+					}
 
 	/*#content_evs*/
 		#content_evs {

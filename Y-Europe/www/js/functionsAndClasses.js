@@ -633,6 +633,39 @@
 
 /**********************************************************************************/
 
+//Evènements customs
+	//Evenement pour savoir quand le bg d'un element est chargé, on l'ajoute avec addBgLoadedEv
+		function getBgUrl(el) {
+		    var bg = "";
+		    bg = window.getComputedStyle(el, "").backgroundImage;
+		    return bg.replace(/url\(['"]?(.*?)['"]?\)/i, "$1");
+		}
+		function addBgLoadedEv(DOMElement) {
+			var bgEvent = new Event('bgLoaded');
+			var image = document.createElement('img');
+			image.src = getBgUrl(DOMElement);
+			image.addEventListener("load", function() {
+				DOMElement.dispatchEvent(bgEvent);
+			},false);
+		}
+
+//Pour faire des loadings sympas
+	function loadOnEvent(loaderPage,pageToLoad,eventForLoading,timeForLoadAnimation,loadAnimationClass,timeForLoadDisparition) {
+		pageToLoad.addEventListener(eventForLoading, function() {	
+			setTimeout(function() {
+				loaderPage.classList.add(loadAnimationClass);
+				setTimeout(function() {
+					loaderPage.style.visibility = "hidden";
+					loaderPage.style.display = "none"; 
+				},timeForLoadDisparition);
+			},timeForLoadAnimation);
+		},false);		
+	}
+
+
+
+/**********************************************************************************/
+
 //Declaration des fonctions pour changer le CSS, animer, d'autres choses
 
 	//Fonctions pour le debugage et le developpement
