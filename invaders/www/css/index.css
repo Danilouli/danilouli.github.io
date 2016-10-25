@@ -509,6 +509,22 @@ ora {
 		#content_arts_fantasy {
 			background: -webkit-linear-gradient(right top, dodgerblue, dodgerblue 40%, deepskyblue 30%, deepskyblue);
 		}
+		#content_arts_poster {
+			position: relative;
+			width: 100vw;
+			height: 50vh;
+			background-color: dodgerblue;
+		}
+		#content_arts_poster h3 {
+			position: absolute;
+			bottom: 30px;
+			width: 70%;
+			left: 15%;
+			font-family: "StarJedi";
+			color: var(--orange3);
+			font-size: 30px;
+			text-align: center;
+		}
 
 		/*.content_arts_cat*/
 			.content_arts_cat {
@@ -684,6 +700,21 @@ ora {
 						margin-bottom: 10px;
 						font-family: "StarJedi";
 					}
+					.content_vids_cat_more {
+						position: absolute;
+						top: 10px;
+						left: 90%;
+						z-index: 20;
+						color: white;
+						font-size: 20px;
+						text-shadow: 0 0 5px white;
+						-webkit-transition: color 0.2s, text-shadow 0.2s;
+						cursor: pointer;
+					}
+					.content_vids_cat_more:hover {
+						color: var(--bleu1);
+						text-shadow: 0 0 10px white;
+					}
 					#content_vids_cats_jvs h2 {
 						color: var(--orange2);
 						text-shadow: 2px 2px 2px var(--bleu2);
@@ -740,10 +771,67 @@ ora {
 			top: 0%;
 			left: 300%;
 			z-index: 10;
-			background-color: indigo;
+			background: -webkit-linear-gradient(right top, indigo, indigo 45%, darkslateblue 45%, darkslateblue);
 			display: inline;
 			overflow: hidden;
+			-webkit-box-sizing: border-box;
+			padding-left: 10vw;
 		}
+		/*.content_evs_ev*/
+			.content_evs_ev {
+				position: relative;
+				display: inline-block;
+				height: 80%;
+				margin-top: 6%;
+				width: 20vw;
+				background-color: red;
+				margin-right: 9vw;
+				background-size: auto 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				border-radius: 10px;
+				box-shadow: 0 0 10px white;	
+				cursor: pointer;
+				--h3TextShad: 5px;
+				--pTextShad: 3px;
+				-webkit-transition: box-shadow 0.3s, border-radius 0.3s;
+			}
+			.content_evs_ev p {
+				position: absolute;
+				top: 30px;
+				color: white;
+				width: 100%;
+				text-align: center;
+				font-size: 30px;
+				font-family: "Antic";
+				text-shadow: 0 0 var(--pTextShad) white;
+				-webkit-transition: text-shadow 0.3s;
+			}
+			.content_evs_ev h3 {
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				bottom: 50px;
+				font-family: "StarJedi";
+				color: var(--orange3);
+				text-shadow: 0 0 var(--h3TextShad) var(--orange1);
+				-webkit-transition: text-shadow 0.3s;
+			}
+			.content_evs_ev:hover {
+				border-radius: 5px;
+				box-shadow: 0 0 20px white;
+				--h3TextShad: 10px;
+				--pTextShad: 8px;
+			}
+			.content_evs_ev:nth-of-type(1) {
+				background-image: url("../img/doge1.jpg");
+			}
+			.content_evs_ev:nth-of-type(2) {
+				background-image: url("../img/doge2.jpg");
+			}
+			.content_evs_ev:nth-of-type(3) {
+				background-image: url("../img/doge3.jpg");
+			}
 
 	/*#content_contact*/
 		#content_contact {
@@ -751,5 +839,39 @@ ora {
 			top: 0%;
 			left: 400%;
 			z-index: 10;
-			background-color: midnightblue;
+			background: -webkit-linear-gradient(bottom right, midnightblue, midnightblue 30%, navy 30%, navy);
+			text-align: center;
+		}
+		#content_contact p {
+			position: relative;
+			margin-top: 100px;
+			width: 100%;
+			text-align: center;
+			font-family: "StarJedi";
+			color: var(--orange2);
+			display: block;
+			text-shadow: 0 0 1px var(--orange1);
+			font-size: 30px;
+		}
+		#content_contact h3 {
+			position: relative;
+			text-align: center;
+			color: var(--orange3);
+			margin-top: 50px;
+			cursor: pointer;
+			text-shadow: 0 0 4px var(--orange2);
+		}
+		#content_contact img {
+			position: relative;
+			height: 300px;
+			width: 300px;
+			margin-top: 50px;
+		}
+		#content_contact span {
+			position: relative;
+			display: block;
+			font-size: 15px;
+			color: white;
+			text-shadow: 0 0 3px white;
+			margin-top: 30px;
 		}
