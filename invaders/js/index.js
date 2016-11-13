@@ -123,7 +123,7 @@ window.addEventListener("load", function() {
 					}
 				//Fonctions AJAX de récupération de données, et fonctions d'insertion de données dans #content_arts
 					//instance AjaxFunction pour la récup des articles 
-						var fetchArts = new AjaxFunction("POST","https://www.crabbix.fr/fetchArts.php",[],1000, {
+						var fetchArts = new AjaxFunction("POST","https://www.crabbix.fr/fetchArts.php",[],60000, {
 							success: function() { receiveArts.launchReception();}
 						})
 					//instance JSONReception pour la reception des articles et leur insertion une fois bien reçus
@@ -180,7 +180,7 @@ window.addEventListener("load", function() {
 				}
 				//Fonctions AJAX de récupération de données, et fonctions d'insertion de données dans #content_picts
 					//instance AjaxFunction pour la récup des premières images
-						var fetchPicts = new AjaxFunction("POST","https://www.crabbix.fr/fetchPicts.php",[],1000, {
+						var fetchPicts = new AjaxFunction("POST","https://www.crabbix.fr/fetchPicts.php",[],60000, {
 							success: function() { receivePicts.launchReception();}
 						})
 					//instance JSONReception pour la reception des premières images et leur insertion une fois bien reçus
@@ -210,7 +210,7 @@ window.addEventListener("load", function() {
 						}
 
 					//instance AjaxFunction pour récupérer les images suivantes lors du scroll
-						var fetchFollowingPict = new AjaxFunction("POST","https://www.crabbix.fr/fetchFollowingPict.php",["pictNumber"],10000, {
+						var fetchFollowingPict = new AjaxFunction("POST","https://www.crabbix.fr/fetchFollowingPict.php",["pictNumber"],30000, {
 							success: function() { receiveFollowingPict.launchReception(); },
 							wait: function() {
 								try {
