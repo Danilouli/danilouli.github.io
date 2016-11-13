@@ -301,7 +301,7 @@ ora {
 				top: 0;
 				width: 100vw;
 				height: 90%;
-				background-image: url(../artsBgs/art1.jpg);
+				background-color: white;
 				box-shadow: 0 0 15px black;
 				text-shadow: 0px 0px 7px black;
 				background-size: cover;
