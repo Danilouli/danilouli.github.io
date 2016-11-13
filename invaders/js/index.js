@@ -233,6 +233,9 @@ window.addEventListener("load", function() {
 							pict = currentDatas.picts[currentDatas.picts.length - 1];
 							newImg = content_picts.querySelector(".mess_el").cloneNode(true);
 							newImg.querySelector("img").src = "img/gallery/gal"+pict.ID+"."+pict.ext;
+							newImg.querySelector("img").date = Date.formateIn(pict.date,"d/m/y");
+							newImg.querySelector("img").author = pict.author;
+							newImg.querySelector("img").name = pict.title;	
 							newImg.querySelector("span").innerHTML = pict.title;
 							content_picts.querySelector(".mess").appendChild(newImg);
 							galleryELAddPictPrevToImg(newImg.querySelector("img"));
