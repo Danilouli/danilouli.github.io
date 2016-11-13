@@ -165,12 +165,16 @@ window.addEventListener("load", function() {
 				function galleryELAddPictPrevToImg(galleryImg) {
 					galleryImg.addEventListener("click", function() {
 						var ratio = galleryImg.width/galleryImg.height;
+						var prevDiv = content_picts.querySelector(".pictPreview");
 						if(ratio > 1) content_picts.querySelector(".pictPreview").style["background-size"] = "100% auto";
 						else content_picts.querySelector(".pictPreview").style["background-size"] = "auto 100%";
-						content_picts.querySelector(".pictPreview").style.top = content_picts.scrollTop + "px";
-						content_picts.querySelector(".pictPreview").style.visibility = "visible";
-						content_picts.querySelector(".pictPreview").style["background-image"] = 'none';
-						content_picts.querySelector(".pictPreview").style["background-image"] = 'url("'+ this.src +'")';
+						prevDiv.style.top = content_picts.scrollTop + "px";
+						prevDiv.style.visibility = "visible";
+						prevDiv.style["background-image"] = 'none';
+						prevDiv.style["background-image"] = 'url("'+ this.src +'")';
+						prevDiv.querySelector("date").innerHTML = "Le "+this.date;
+						prevDiv.querySelector("author").innerHTML = "Par "+this.author;
+						prevDiv.querySelector("name").innerHTML = this.name;
 						content_picts.style.overflowY = "hidden";
 					},false);			
 				}
@@ -196,8 +200,11 @@ window.addEventListener("load", function() {
 						function insertPict(pict,pictNumber) {
 							try {
 								galleryElement = content_picts.querySelectorAll(".mess_el")[pictNumber];
-								galleryElement.querySelector("img").src = "img/gallery/gal"+pict.ID+"."+pict.ext;	
-								galleryElement.querySelector("span").innerHTML = pict.title;								
+								galleryElement.querySelector("img").src = "img/gallery/gal"+pict.ID+"."+pict.ext;
+								galleryElement.querySelector("img").date = Date.formateIn(pict.date,"d/m/y");
+								galleryElement.querySelector("img").author = pict.author;
+								galleryElement.querySelector("img").name = pict.title;	
+								galleryElement.querySelector("span").innerHTML = pict.title;							
 							}
 							catch(err) {console.log("impossible d'ajouter l'image",i);}							
 						}
