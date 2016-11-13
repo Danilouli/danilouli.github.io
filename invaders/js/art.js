@@ -88,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function() {
 			var receiveArt = new JSONReception(fetchArt, function() {fetchArt.go(jsget("id"));},10,{
 				success: function() { 
 					currentArt = receiveArt.dataReceived;
-					console.log("Article à insérer :", currentArt);
 					insertArt();
 				}
 			})

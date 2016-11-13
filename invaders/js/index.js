@@ -183,7 +183,6 @@ window.addEventListener("load", function() {
 						var receivePicts = new JSONReception(fetchPicts, function() {fetchPicts.go();},10,{
 							success: function() { 
 								currentDatas.picts = receivePicts.dataReceived;
-								console.log(currentDatas.picts);
 								insertPicts();
 							}
 						})

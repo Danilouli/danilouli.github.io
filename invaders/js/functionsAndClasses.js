@@ -384,7 +384,7 @@
 					deadTime = this.maxTime;
 					beginning = Date.now();
 					abortOrNot = (typeof arguments[arguments.length-2] != "boolean")? true : arguments[arguments.length-2];
-					infos = (typeof arguments[arguments.length-1] != "boolean")? true : arguments[arguments.length-1];
+					infos = (typeof arguments[arguments.length-1] != "boolean")? false : arguments[arguments.length-1];
 					dataString = this.args[0]+"="+arguments[0];
 					for(var i = 1; i < this.args.length; i++) {
 						dataString = dataString+"&"+this.args[i]+"="+arguments[i];
@@ -469,7 +469,7 @@
 			this.maxAttempts = maxAttempts;
 			this.instructions = instructions;
 			this.dataReceived = false;
-			if(infos == undefined) infos = true;
+			if(infos == undefined) infos = false;
 			this.launchReception = function() {
 				if(infos) console.log("On va commencer la recherche de Jason perdu dans le labyrinthe de",ajaxFunction.serverPageUrl);
 				if(ajaxFunction.request.responseText.trim() != "" ) {
