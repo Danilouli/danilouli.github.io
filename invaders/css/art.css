@@ -89,7 +89,7 @@ a:hover,a:focus,a:visited {
 }
 
 ora {
-	color: #E9531C;
+	color: var(--orange3);
 }
 
 /*#outside*/
