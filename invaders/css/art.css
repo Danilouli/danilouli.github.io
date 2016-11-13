@@ -71,6 +71,10 @@ font-family: "StarHole";
 h3 {
 	font-family: 'Antic';
 	font-weight: 500;
+	font-size: 25px;
+	text-shadow: 0 0 5px var(--bleu2);
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 p {
@@ -345,6 +349,8 @@ ora {
 			}
 			#art_content img {
 				box-shadow: 0 0 10px rgba(20,20,20,0.8);
+				margin-top: 20px;
+				margin-bottom: 20px;
 			}
 
 		#art_backLink {
@@ -359,4 +365,28 @@ ora {
 			color: var(--bleu1);
 			text-shadow: 0 0 5px white;
 			text-decoration: underline;
+		}
+
+		.testConcl {
+			width: 100%;
+			margin-top: 30px;
+			position: relative;
+		}
+		.testFrame {
+			position: relative;
+			display: inline-block;
+			width: 40%;
+			margin-left: 5%;
+			margin-right: 5%;
+			text-align: left;
+		}
+		.testFrame h3 {
+			color: var(--orange1);
+			text-shadow: none;
+		}
+		.testGrade {
+			font-family: "StarJedi";
+			color: var(--orange2);
+			font-size: 30px;
+			text-shadow: 0 0 10px var(--bleu2);
 		}

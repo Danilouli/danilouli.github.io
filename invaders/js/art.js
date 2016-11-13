@@ -12,6 +12,14 @@ document.addEventListener("DOMContentLoaded", function() {
 		this.navBtn = TABoutside_navbar_btns_element[this.num];
 	}
 
+	//Fonctions d'interprétation des données
+		function INTcategorize(cat) {
+			if(cat == "jv") return "Jeu Vidéo";
+			if(cat == "fan") return "Fantasy";
+			if(cat == "ani") return "Animes et Mangas";
+			if(cat == "other") return "Autre";
+		}
+
 	//Fonctions d'EL, AJAX, pour les différentes parties du site
 
 		//Fonctions et variables sur #outside
@@ -88,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			function insertArt() {
 				console.log(currentArt);
 				for(var i = 0; i < TAGArtCats.length; i++) {
-					TAGArtCats[i].innerHTML = currentArt.category;
+					TAGArtCats[i].innerHTML = INTcategorize(currentArt.category);
 				}
 				for(var i = 0; i < TAGArtTitle.length; i++) {
 					TAGArtTitle[i].innerHTML = currentArt.title;
@@ -100,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
 					TAGArtDate[i].innerHTML = Date.formateIn(currentArt.date,"d/m/y");
 				}					
 				art_content.innerHTML = currentArt.content;
-				art_wrapper.style["background-image"] = "url(artsBgs/art"+currentArt.ID+".jpg)";
+				art_wrapper.style["background-image"] = "url(img/artsBgs/art"+currentArt.ID+".jpg)";
 			}
 			fetchArt.go(jsget("id"));
 			

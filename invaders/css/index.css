@@ -579,6 +579,7 @@ ora {
 					background-position-y: var(--bgPosY);
 					cursor: pointer;
 					opacity: 0.80;
+					background-color: rgba(255,255,255,0.6);
 					text-shadow: 0 0 10px black;
 					box-shadow: 0 0 10px black;
 					-webkit-transition: text-shadow 0.2s, opacity 0.2s, background-position-y 0.2s, box-shadow 0.2s;

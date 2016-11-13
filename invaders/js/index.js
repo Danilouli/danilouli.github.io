@@ -18,16 +18,14 @@ window.addEventListener("load", function() {
 		this.navBtn = TABoutside_navbar_btns_element[this.num];
 	}
 
+	function INTcategorize(cat) {
+		if(cat == "jv") return "Jeu Vidéo";
+		if(cat == "fan") return "Fantasy";
+		if(cat == "ani") return "Animes et Mangas";
+		if(cat == "other") return "Autre";
+	}
+
 	//Fonctions d'EL, AJAX, pour les différentes parties du site
-		//Fonctions d'interprétation des données
-			function INTcategorize(cat) {
-				if(cat == "jv") return "Jeu Vidéo";
-				if(cat == "fan") return "Fantasy";
-				if(cat == "ani") return "Animes et Mangas";
-				if(cat == "other") return "Autre";
-			}
-
-
 		//Fonctions et variables sur #outside
 			//Variables sur #outside_navbar
 				var TABoutside_navbar_btns_element = classTab("outside_navbar_btns_element");
@@ -144,7 +142,7 @@ window.addEventListener("load", function() {
 										DOMcontent_arts[i][j].nameEL.innerHTML = artsToInsert[i][j].title;
 										DOMcontent_arts[i][j].dateAuthorEL.innerHTML = "Publié le " + Date.formateIn(artsToInsert[i][j].date,"d/m/y") + " par " + artsToInsert[i][j].writer;
 										DOMcontent_arts[i][j].catEL.innerHTML = "Catégorie : " + INTcategorize(artsToInsert[i][j].category);
-										DOMcontent_arts[i][j].style["background-image"] = "url(artsBgs/art"+artsToInsert[i][j].ID+".jpg)";
+										DOMcontent_arts[i][j].style["background-image"] = "url(img/artsBgs/art"+artsToInsert[i][j].ID+".jpg)";
 										setCSSProperty(DOMcontent_arts[i][j],"--bgPosY", artsToInsert[i][j].bgPosY + "%");
 										function chooseArt(catNumber,artNumber) {
 											DOMcontent_arts[catNumber][artNumber].addEventListener("click",function() {
