@@ -603,14 +603,14 @@ yel {
 		/*#content_props_form*/
 			#content_props_form {
 				position: absolute;
-				width: 40%;
-				height: 70%;
-				left: 30%;
-				top: 15%;
-				background-color: var(--bleuEur);
+				width: 40vw;
+				left: 30vw;
+				top: 10vh;
+				background-color: var(--grisClair);
 				z-index: 110;
-				border-radius: 10px;
-				box-shadow: 0px 0px 8px var(--bleuEur);
+				box-shadow: 0px 0px 10px var(--bleuEur);
+				padding-top: 30px;
+				padding-bottom: 30px;
 			}
 			/*#content_props_form_titleInput*/
 				#content_props_form_titleInput {
@@ -631,6 +631,13 @@ yel {
 					box-shadow: 0 0 10px black;
 				}
 			/*#content_props_form_subjSelect*/
+				#content_props_form label[for="subject"] {
+					position: relative;
+					display: inline-block;
+					margin-top: 10px;
+					margin-left: 5%;
+					-webkit-box-sizing: border-box;
+				}
 				#content_props_form_subjSelect {
 					position: relative;
 					margin-top: 10px;
@@ -701,12 +708,15 @@ yel {
 					border-radius: 50px;
 					margin-left: 37.5%;
 					outline: none;
+				}
+				#content_props_form_submit[disabled="false"] {
 					cursor: pointer;
 				}
-				#content_props_form_submit:hover {
+				#content_props_form_submit[disabled="false"]:hover {
 					background-color: var(--bleuFonce);
+					text-shadow: 0 0 10px white;
 				}
-		 		#content_props_form_submit:active{
+		 		#content_props_form_submit[disabled="false"]:active{
 					background-color: rgb(200,200,200);
 					color: white;
 					outline: none;
@@ -718,10 +728,11 @@ yel {
 					position: absolute;
 					bottom: 2.5%;
 					right: 10px;
-					color: white;
+					color: black;
+					cursor: pointer;
 				}
 				#content_props_form_close:hover {
-					color: rgb(200,200,200);
+					color: rgb(70,70,70);
 				}
 
 		/*#content_props_secondForm*/
@@ -1079,3 +1090,60 @@ yel {
 			z-index: 10;
 			background-color: white;
 		}
+			#content_contact_title {
+				position: relative;
+				color: var(--bleuEur);
+				font-family: "BebasNeueRegular";
+				font-size: 80px;
+				letter-spacing: 1px;
+				width: 100%;
+				text-align: center;
+				margin-top: 100px;
+			}
+			#content_contact_text {
+				position: relative;
+				margin-top: 50px;
+				font-family: "SourceSansProLight";
+				color: var(--bleuFonce);
+				font-size: 30px;
+				width: 100%;
+				text-align: center;
+			}
+			#content_contact_form {
+				position: relative;
+				margin-top: 50px;
+				width: 100%;
+				text-align: center;
+			}
+				#content_contact_form input,#content_contact_form textarea {
+					position: relative;
+					margin-top: 10px;
+					width: 30vw;
+					margin-left: 35vw;
+					display: block;
+					border-radius: 5px;
+					border: 1px solid var(--grisMoy);
+					font-size: 18px;
+					font-family: "SourceSansProLight";
+					-webkit-box-sizing: border-box;
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				#content_contact_form input {
+					height: 5vh;
+				}
+				#content_contact_form textarea {
+					height: 25vh;
+					padding-top: 10px;
+					resize: none;
+				}
+				#content_contact_form_submit,#content_contact_form_submit:visited,#content_contact_form_submit:focus {
+					background-color: var(--bleuEur);
+					color: white;
+					cursor: pointer;
+				}
+				#content_contact_form_submit:hover, #content_contact_form_submit:active {
+					background-color: var(--bleuFonce);
+					text-shadow: 0 0 10px white;
+				}
+

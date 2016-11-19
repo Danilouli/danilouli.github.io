@@ -250,8 +250,9 @@
 						<div id="content_props_elements_infos" class="hide">Faire une proposition</div>	
 				</div>
 				<!--Formulaire qui apparait après un click sur #content_props_elements_post-->	
-				<div id="content_props_form" class="hide">
+				<form id="content_props_form" class="hide">
 					<input type="text" id="content_props_form_titleInput" placeholder="Titre de ta proposition">
+					<label for="subject">Le thème de ta proposition :</label>
 					<select name="subject" id="content_props_form_subjSelect">
 						<option value="inst">Institutions et Démocratie</option>
 						<option value="eco">Economie et social</option>
@@ -262,7 +263,7 @@
 					<textarea name="" id="content_props_form_input" rows="20"></textarea>
 					<input id="content_props_form_submit" type="submit" value="proposer">
 					<div id="content_props_form_close"><i class="fa fa-close"></i></div>
-				</div>
+				</form>
 				<div id="content_props_secondForm" class="hide">
 					<div id="content_props_secondForm_title">Avant de nous soummettre ta proposition, inscris toi, petit européen.</div>
 					<input type="text" id="content_props_secondForm_mailInput" placeholder="Ton mail">
@@ -355,13 +356,13 @@
 			</div>
 			<!--Contact-->
 			<div id="content_contact" class="content_element ANIMcontent">
-				<div id="content_contact_title"></div>
-				<div id="content_contact_text"></div>
+				<div id="content_contact_title">Nous contacter</div>
+				<div id="content_contact_text">Tu veux en savoir plus sur nous ? Comment nous rejoindre ?</div>
 				<div id="content_contact_form">
 					<input type="text" id="content_contact_form_name" placeholder="Prenom">
 					<input type="text" id="content_contact_form_age" placeholder="Age">
 					<input type="text" id="content_contact_form_country" placeholder="Pays">
-					<textarea id="content_contact_form_message"></textarea> 
+					<textarea id="content_contact_form_message" placeholder="Ton message !"></textarea> 
 					<input type="submit" id="content_contact_form_submit">
 				</div>
 			</div>

@@ -248,26 +248,28 @@ loadOnEvent(outside_loader,content_home,"bgLoaded",1000,"loaderTopHiding",500);
 					switchCSS(content_props_shade,"visibility","hidden","visible");			
 				},false);
 
-				content_props_form_submit.addEventListener("click", function() {
-					removeAddClass(content_props_form,"show","hide");
-					removeAddClass(content_props_secondForm,"hide","show");
-				},false);
 				content_props_secondForm_close.addEventListener("click",function() {
 					removeAddClass(content_props_secondForm,"show","hide");
 					switchCSS(content_props_shade,"visibility","hidden","visible");
 				},false); 
 
+				content_props_form.addEventListener("keyup", function() {
+					if(content_props_form_titleInput.value != "" && content_props_form_input.value != "") content_props_form_submit.setAttribute("disabled","false"); 
+				},false);
+
 			//ELs Ajax de #content_props, pour poster une prop, et les récup quand on clique sur le bouton des props
 				content_props_secondForm_submit.addEventListener("click", function() { 
 					postProp.go(content_props_secondForm_mailInput.value,content_props_secondForm_passwordInput.value,content_props_form_input.value,content_props_form_subjSelect.value,content_props_form_titleInput.value);
+					content_props_form_submit.addEventListener("click", function() {
+						console.log("showage de trucs...");
+						removeAddClass(content_props_form,"show","hide");
+						removeAddClass(content_props_secondForm,"hide","show");
+						console.log("showage reussi !");
+					},false);
 				}, false); 
 
 				outside_navbar_propsBtn.addEventListener("click", function() {
 					getProps.go();
 				}, false);
-
-			// TABANIMcontent[2].addEventListener("transitionend",function() {
-			// 	console.log("hello");
-			// },false);
 			
 },false);
