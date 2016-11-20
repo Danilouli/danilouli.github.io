@@ -112,7 +112,7 @@ loadOnEvent(outside_loader,content_home,"bgLoaded",1000,"loaderTopHiding",500);
 					var receivePropsOnLoad = new JSONReception(getProps, function() {getProps.go();},100,{
 						success : function() {
 							console.log(receivePropsOnLoad.dataReceived);
-							//insertAllProps(receivePropsOnLoad.dataReceived);
+							insertAllProps(receivePropsOnLoad.dataReceived);
 						}
 					});		
 
@@ -160,7 +160,6 @@ loadOnEvent(outside_loader,content_home,"bgLoaded",1000,"loaderTopHiding",500);
 							subjectPage.TABpropsCheck = subjectPage.subjDiv.querySelectorAll(".content_props_element_prop_title_check");
 							subjectPage.TABpropsSummary = subjectPage.subjDiv.querySelectorAll(".content_props_element_prop_summary");
 							subjectPage.TABpropsVotes = subjectPage.subjDiv.querySelectorAll(".content_props_element_prop_title_voteNumber");
-							console.log(subjectPage.TABprops.length,subjectPage.subject);
 						}
 						for(var i = 0; i < subjectPage.TABprops.length; i++) {
 							try {
@@ -171,7 +170,7 @@ loadOnEvent(outside_loader,content_home,"bgLoaded",1000,"loaderTopHiding",500);
 								subjectPage.TABpropsSummary[i].innerHTML = contentToInsert;
 								subjectPage.TABpropsVotes[i].innerHTML = votesToInsert;
 							} 
-							catch(err){console.log("Erreur d'insertion des props dans les props",i);}
+							catch(err){console.log("Erreur d'insertion des props avec la prop",i,"du sujet",subjectPage.subject,",",subjPropsToInsert.length,"props à inserer");}
 						}
 					}
 
@@ -243,30 +242,33 @@ loadOnEvent(outside_loader,content_home,"bgLoaded",1000,"loaderTopHiding",500);
 					removeAddClass(content_props_form,"hide","show");
 					switchCSS(content_props_shade,"visibility","hidden","visible");
 				},false);
+
+				content_props_form.addEventListener("submit", function(evt) {
+					evt.preventDefault();
+					removeAddClass(content_props_form,"show","hide");
+					removeAddClass(content_props_secondForm,"hide","show");
+				},false);
+
 				content_props_form_close.addEventListener("click", function() {
 					removeAddClass(content_props_form,"show","hide");
 					switchCSS(content_props_shade,"visibility","hidden","visible");			
 				},false);
+
+				content_props_secondForm.addEventListener("submit",function(evt) {
+					evt.preventDefault();
+					removeAddClass(content_props_secondForm,"show","hide");
+					removeAddClass(content_props_success,"hide","show");
+					postProp.go(content_props_secondForm_mailInput.value,content_props_secondForm_passwordInput.value,content_props_form_input.value,content_props_form_subjSelect.value,content_props_form_titleInput.value);
+					switchCSS(content_props_shade,"visibility","hidden","visible");
+				},false); 
 
 				content_props_secondForm_close.addEventListener("click",function() {
 					removeAddClass(content_props_secondForm,"show","hide");
 					switchCSS(content_props_shade,"visibility","hidden","visible");
 				},false); 
 
-				content_props_form.addEventListener("keyup", function() {
-					if(content_props_form_titleInput.value != "" && content_props_form_input.value != "") content_props_form_submit.setAttribute("disabled","false"); 
-				},false);
 
 			//ELs Ajax de #content_props, pour poster une prop, et les récup quand on clique sur le bouton des props
-				content_props_secondForm_submit.addEventListener("click", function() { 
-					postProp.go(content_props_secondForm_mailInput.value,content_props_secondForm_passwordInput.value,content_props_form_input.value,content_props_form_subjSelect.value,content_props_form_titleInput.value);
-					content_props_form_submit.addEventListener("click", function() {
-						console.log("showage de trucs...");
-						removeAddClass(content_props_form,"show","hide");
-						removeAddClass(content_props_secondForm,"hide","show");
-						console.log("showage reussi !");
-					},false);
-				}, false); 
 
 				outside_navbar_propsBtn.addEventListener("click", function() {
 					getProps.go();

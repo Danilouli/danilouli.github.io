@@ -251,7 +251,7 @@
 				</div>
 				<!--Formulaire qui apparait après un click sur #content_props_elements_post-->	
 				<form id="content_props_form" class="hide">
-					<input type="text" id="content_props_form_titleInput" placeholder="Titre de ta proposition">
+					<input type="text" id="content_props_form_titleInput" placeholder="Titre de ta proposition" required="true" autocomplete="off">
 					<label for="subject">Le thème de ta proposition :</label>
 					<select name="subject" id="content_props_form_subjSelect">
 						<option value="inst">Institutions et Démocratie</option>
@@ -260,17 +260,18 @@
 						<option value="def">Défense et Diplomatie</option>
 						<option value="cult">Culture</option>
 					</select>
-					<textarea name="" id="content_props_form_input" rows="20"></textarea>
+					<textarea name="" id="content_props_form_input" rows="20" required="true" autocomplete="off"></textarea>
 					<input id="content_props_form_submit" type="submit" value="proposer">
 					<div id="content_props_form_close"><i class="fa fa-close"></i></div>
 				</form>
-				<div id="content_props_secondForm" class="hide">
-					<div id="content_props_secondForm_title">Avant de nous soummettre ta proposition, inscris toi, petit européen.</div>
-					<input type="text" id="content_props_secondForm_mailInput" placeholder="Ton mail">
-					<input type="text" id="content_props_secondForm_passwordInput" placeholder="Un mot de passe que tu peux retenir...">
+				<form id="content_props_secondForm" class="hide">
+					<div id="content_props_secondForm_title">Avant de nous soummettre ta proposition, inscris toi !</div>
+					<input type="email" id="content_props_secondForm_mailInput" placeholder="Ton mail" required="true" autocomplete="off">
+					<input type="text" id="content_props_secondForm_passwordInput" placeholder="Un mot de passe que tu peux retenir..." required="true" autocomplete="off">
 					<input id="content_props_secondForm_submit" type="submit" value="proposer">
 					<div id="content_props_secondForm_close"><i class="fa fa-close"></i></div>
-				</div>
+				</form>
+				<div id="content_props_success" class="hide">Bravo ! Tu nous as bien soumi ta proposition, on l'examine et on revient vers toi au cas où :)</div>
 				<div id="content_props_shade"></div>
 			</div>
 			<!--Publications-->

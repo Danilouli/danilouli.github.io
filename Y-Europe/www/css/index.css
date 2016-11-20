@@ -709,14 +709,14 @@ yel {
 					margin-left: 37.5%;
 					outline: none;
 				}
-				#content_props_form_submit[disabled="false"] {
+				#content_props_form_submit {
 					cursor: pointer;
 				}
-				#content_props_form_submit[disabled="false"]:hover {
+				#content_props_form_submit:hover {
 					background-color: var(--bleuFonce);
 					text-shadow: 0 0 10px white;
 				}
-		 		#content_props_form_submit[disabled="false"]:active{
+		 		#content_props_form_submit:active{
 					background-color: rgb(200,200,200);
 					color: white;
 					outline: none;
@@ -742,10 +742,11 @@ yel {
 				height: 200px;
 				left: 25%;
 				top: 15%;
-				background-color: var(--bleuEur);
+				background-color: var(--grisClair);
 				z-index: 110;
-				border-radius: 10px;
-				box-shadow: 0px 0px 8px var(--bleuEur);
+				box-shadow: 0px 0px 10px var(--bleuEur);
+				padding-top: 30px;
+				padding-bottom: 30px;
 			}
 			/*#content_props_secondForm_title*/
 				#content_props_secondForm_title {
@@ -834,7 +835,19 @@ yel {
 				#content_props_secondForm_close:hover {
 					color: rgb(200,200,200);
 				}
-
+		/*#content_props_success*/
+			#content_props_success {
+				position: absolute;
+				width: 50%;
+				height: 100px;
+				left: 25%;
+				top: calc(50% - 50px);
+				background-color: var(--grisClair);
+				z-index: 110;
+				box-shadow: 0px 0px 10px var(--bleuEur);
+				padding-top: 30px;
+				padding-bottom: 30px;
+			}
 		/*#content_props_shade*/
 			#content_props_shade {
 				position: absolute;
