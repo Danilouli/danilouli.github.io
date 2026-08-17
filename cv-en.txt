@@ -1,0 +1,80 @@
+Daniel Saadia
+Staff Engineer & Tech Lead
+Paris, France
+danielsaadia@dyod.io
++33 6 11 37 18 03
+linkedin.com/in/dsaadia
+x.com/ddyods
+github.com/lumpcode
+
+PROFILE
+
+Staff Engineer and TypeScript Tech Lead, building software since 2015. I align architecture and engineering practices across one or more projects, grow teams, and stay a hands-on contributor.
+
+- TypeScript consistency across projects: typing, tests, clean code, standards, and architecture.
+- Coaching and upskilling engineering teams.
+- Strong focus on TDD and sound typing; tests as a quality bar, not an afterthought.
+- AI loops in the development cycle (agents, workflows), on existing codebases, verified by tests.
+
+SKILLS
+
+Staff / Lead
+- TypeScript standards, architecture, CI, reviews — including across multiple projects.
+- Upskilling: pair programming, scoping, stack decisions.
+- Hands-on: I ship. I don’t just steer.
+
+Engineering
+- TypeScript backend / frontend (Node.js, Express, React, Vue, Next.js).
+- AI loops (agents) verified by tests.
+- REST or GraphQL APIs, realtime (WebSockets), Azure and AWS.
+
+OPEN SOURCE
+
+Lumpcode — github.com/lumpcode
+CLI and library for agent orchestration in automated development campaigns. Simple to set up and git-native: opens PRs on its own for migrations, roadmaps, backlogs, and more.
+
+EXPERIENCE
+
+Tech Lead — Keolis, Paris
+May 2021 — Present
+Owner of the frontend and backend (API) for a transport-network monitoring app, a core tool for the group: ridership, early/late running, interactive maps, full-day replay (animated vehicles on the map).
+Used by stakeholders critical to the group: reliability and polish are non-negotiable. Map animations: frontend performance constraints.
+Team of 4 web developers, working closely with a Databricks data team. Core stack: TypeScript, Vue, Node.js.
+- Architecture: npm monorepo, Clean Architecture; wrote Azure DevOps CI/CD pipelines.
+- Team: pair programming, code reviews, agile (Azure DevOps board).
+- Stack: TypeScript, Vue 3, Vite, GraphQL (Apollo), Mapbox, SQL. Unit tests and Cypress e2e, strict coverage.
+- AI loops: set up to support the team (refactoring, evolution), verified by tests.
+- Cross-cutting: occasional advisory on 3 other projects (architecture, practices).
+- Also: Databricks pipelines (Python), Azure DevOps support.
+
+Full-Stack Developer — ENGIE, Paris
+April 2020 — May 2021
+B2B application rewrite. Team of 6 developers, 1 QA, and 1 DevOps. Frontend and backend, contributing to architecture.
+- React, GraphQL (Apollo), Prisma, AWS Lambda. TDD. OKTA authentication.
+
+Full-Stack Developer — Meet My Mentor, Paris
+February 2020 — April 2020
+End-to-end build (frontend, backend, infra) of a masterclass VOD — React, Next.js, GraphQL, MongoDB; AWS VOD infra (S3, CloudFront, Lambda).
+
+Full-Stack Developer — City of Paris, Paris
+December 2019 — February 2020
+Vue.js booking module for the City of Paris funeral services: Google Maps of agencies, shipped as a WordPress plugin.
+
+Co-founder & CTO — Les Sherpas, Paris
+June 2015 — December 2019
+Designed and built an online tutoring platform with a teacher marketplace (les-sherpas.co).
+- Realtime classroom: video, whiteboard, chat (Socket.io).
+- React / Next.js; marketplace matching; Stripe Connect payments; serverless AWS API.
+- React Native mobile app; managed 3 developers.
+
+EDUCATION
+
+Digital Architect — École 42, Paris
+Sept. 2017 — Jan. 2020
+
+Master in Management — ESCP, Paris
+Sept. 2014 — Jan. 2020
+Admitted after ECS preparatory class, Lycée Carnot (Paris). Entrepreneurship track.
+
+Licence 3, Mathematics and Probability — Université Paris Sorbonne, Paris
+Sept. 2014 — Sept. 2015

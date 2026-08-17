@@ -1,0 +1,80 @@
+Daniel Saadia
+Staff Engineer & Tech Lead
+Paris, France
+danielsaadia@dyod.io
++33 6 11 37 18 03
+linkedin.com/in/dsaadia
+x.com/ddyods
+github.com/lumpcode
+
+PRÉSENTATION
+
+Staff Engineer et Tech Lead TypeScript, je développe depuis 2015. J’aligne architectures et bonnes pratiques sur un ou plusieurs projets, je fais monter les équipes, et je reste un contributeur actif au code.
+
+- Cohérence TypeScript entre projets : typage, tests, clean code, standards et architecture.
+- Accompagnement et montée en compétence des équipes de développement.
+- Attachement au TDD et au typage robuste ; les tests comme exigence de qualité, pas comme option.
+- Intégration de boucles IA au cycle de développement (agents, workflows), sur des bases de code existantes, avec vérification par les tests.
+
+COMPÉTENCES
+
+Staff / Lead
+- Standards TypeScript, architecture, CI, revues — y compris en transverse sur plusieurs projets.
+- Montée en compétence : pair programming, cadrage, arbitrage de la stack.
+- Dans le code : je livre et reste contributeur, je ne me contente pas de piloter.
+
+Développement
+- Backend / frontend TypeScript (Node.js, Express, React, Vue, Next.js).
+- Boucles IA (agents) avec vérification par les tests.
+- APIs REST ou GraphQL, temps réel (WebSockets), cloud Azure et AWS.
+
+OPEN SOURCE
+
+Lumpcode — github.com/lumpcode
+CLI et librairie d’orchestration d’agents pour des campagnes de développement automatisées. Simple à mettre en place et a juste besoin de git pour fonctionner : ouvre en autonomie des PRs pour des migrations, roadmaps, backlogs...
+
+EXPÉRIENCE
+
+Tech Lead — Keolis, Paris
+Mai 2021 — Présent
+Responsable front et back (API) de l’application de suivi d’un réseau de transport, structurante pour le groupe : fréquentation, avance/retard, cartes interactives, rejeu d’une journée (véhicules animés sur la carte).
+Destinée à des interlocuteurs critiques pour le groupe : importants enjeux de fiabilité et de finition. Animations cartographiques : questions de performance côté front.
+Équipe de 4 développeurs web, en lien constant avec une équipe data sur DataBricks. Socle TypeScript, Vue, Node.js.
+- Architecture : mono-repo npm, Clean Architecture ; écriture des pipelines CI/CD Azure DevOps.
+- Équipe : pair programming, code reviews, méthodologie agile (board Azure DevOps).
+- Stack : TypeScript, Vue 3, Vite, GraphQL (Apollo), Mapbox, SQL. Tests unitaires et e2e Cypress, coverage exigeant.
+- Boucles IA : mise en place pour accompagner l’équipe (refactoring, évolutions), avec vérification par les tests.
+- Transverse : conseil ponctuel sur 3 autres projets (architecture, pratiques).
+- Aussi : pipelines Databricks (Python), support DevOps Azure.
+
+Développeur Fullstack — ENGIE, Paris
+Avril 2020 — Mai 2021
+Refonte d’une application B2B. Équipe de 6 développeurs, 1 QA et 1 DevOps. Front et back, participation à l’architecture.
+- React, GraphQL (Apollo), Prisma, AWS Lambda. TDD. Authentification OKTA.
+
+Développeur Fullstack — Meet My Mentor, Paris
+Février 2020 — Avril 2020
+Développement complet (front, back, infra) d’une VOD de masterclasses — React, Next.js, GraphQL, MongoDB ; infra VOD AWS (S3, CloudFront, Lambda).
+
+Développeur Fullstack — Ville de Paris, Paris
+Décembre 2019 — Février 2020
+Module de réservation Vue.js pour les Services Funéraires de la Ville de Paris : carte Google Maps des agences, intégré au site en plugin WordPress.
+
+Co-fondateur & CTO — Les Sherpas, Paris
+Juin 2015 — Décembre 2019
+Conception et développement de la plateforme de cours particuliers en ligne, avec marketplace de professeurs (les-sherpas.co).
+- Salle de classe temps réel : vidéo, tableau blanc, chat (Socket.io).
+- React / Next.js ; matching marketplace ; paiements Stripe Connect ; API serverless AWS.
+- App mobile React Native ; management de 3 développeurs.
+
+FORMATION
+
+Architecte au numérique — École 42, Paris
+Sept. 2017 — Janv. 2020
+
+Master in Management — ESCP, Paris
+Sept. 2014 — Janv. 2020
+Entrée après classe préparatoire ECS, lycée Carnot (Paris). Option entrepreneuriat.
+
+Licence 3 Mathématiques et Probabilités — Université Paris Sorbonne, Paris
+Sept. 2014 — Sept. 2015
