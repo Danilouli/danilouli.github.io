@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daniel Saadia — Staff Engineer &amp; Tech Lead</title>
+    <style>
+      :root {
+        --ink: #1a1a1a;
+        --muted: #555;
+        --line: #c8c8c8;
+        --photo-bg: #ececec;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        background: #fff;
+        color: var(--ink);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 10pt;
+        line-height: 1.38;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        padding: 14mm 16mm 16mm;
+        background: #fff;
+      }
+
+      .hint {
+        max-width: 210mm;
+        margin: 16px auto 0;
+        padding: 0 8px 24px;
+        color: #666;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .hint code {
+        font-size: 11px;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 18px;
+        padding-bottom: 10px;
+        border-bottom: 1.5px solid var(--ink);
+      }
+
+      .identity {
+        flex: 1;
+        min-width: 0;
+        padding-top: 2px;
+      }
+
+      h1 {
+        font-size: 22pt;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        line-height: 1.05;
+        text-transform: uppercase;
+      }
+
+      .role {
+        margin-top: 4px;
+        font-size: 11.5pt;
+        font-weight: 400;
+        color: var(--muted);
+      }
+
+      .contacts {
+        margin-top: 10px;
+        color: var(--ink);
+        font-size: 9pt;
+        line-height: 1.55;
+      }
+
+      a,
+      a:visited {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .photo {
+        flex: 0 0 28mm;
+        width: 28mm;
+        height: 36mm;
+        overflow: hidden;
+        background: var(--photo-bg);
+        border: 1px solid var(--line);
+        font-size: 0;
+      }
+
+      .photo img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%;
+      }
+
+      .photo.empty {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+        font-size: 8pt;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .photo.empty img {
+        display: none;
+      }
+
+      /* Sections */
+      section {
+        margin-top: 11px;
+      }
+
+      h2 {
+        margin-bottom: 6px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid var(--line);
+        color: var(--ink);
+        font-size: 8.5pt;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      p {
+        margin-bottom: 5px;
+      }
+
+      .lead {
+        max-width: 100%;
+      }
+
+      .points {
+        margin: 4px 0 0 14px;
+      }
+
+      .points li {
+        margin-bottom: 2px;
+      }
+
+      /* Skills */
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 22px;
+      }
+
+      .block h3 {
+        margin-bottom: 3px;
+        font-size: 10pt;
+        font-weight: 700;
+      }
+
+      /* Jobs */
+      .job {
+        margin-bottom: 9px;
+      }
+
+      .job:last-child {
+        margin-bottom: 0;
+      }
+
+      .job-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .job-title {
+        font-weight: 700;
+      }
+
+      .job-meta {
+        color: var(--muted);
+        font-size: 9pt;
+      }
+
+      .job-dates {
+        flex: 0 0 auto;
+        color: var(--ink);
+        font-size: 9pt;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .job p {
+        margin-top: 3px;
+        margin-bottom: 3px;
+      }
+
+      .job p + p {
+        margin-top: 5px;
+      }
+
+      .job ul {
+        margin: 3px 0 0 14px;
+      }
+
+      .job li {
+        margin-bottom: 1.5px;
+      }
+
+      .edu {
+        margin-bottom: 6px;
+      }
+
+      .edu:last-child {
+        margin-bottom: 0;
+      }
+
+      .edu-detail {
+        color: var(--muted);
+        font-size: 9pt;
+      }
+
+      @media print {
+        html,
+        body {
+          background: #fff;
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+
+        .page {
+          width: auto;
+          min-height: auto;
+          margin: 0;
+          padding: 0;
+        }
+
+        .hint {
+          display: none;
+        }
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .job,
+        .edu,
+        .block {
+          break-inside: avoid;
+        }
+      }
+
+      @page {
+        size: A4;
+        margin: 12mm 14mm 14mm;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="identity">
+          <h1>Daniel Saadia</h1>
+          <p class="role">Staff Engineer &amp; Tech Lead</p>
+          <p class="contacts">
+            Paris, France<br />
+            <a href="mailto:danielsaadia@dyod.io">danielsaadia@dyod.io</a>
+            ·
+            <a href="tel:+33611371803">+33 6 11 37 18 03</a><br />
+            <a href="https://www.linkedin.com/in/dsaadia/">linkedin.com/in/dsaadia</a>
+            ·
+            <a href="https://x.com/ddyods">x.com/ddyods</a>
+            ·
+            <a href="https://github.com/lumpcode/lumpcode">github.com/lumpcode</a>
+          </p>
+        </div>
+        <div class="photo" id="photo">
+          <img src="photoDS.jpg" alt="Daniel Saadia" />
+          Photo
+        </div>
+      </header>
+
+      <section>
+        <h2>Présentation</h2>
+        <p class="lead">
+          Staff Engineer et Tech Lead TypeScript, je développe depuis 2015.
+          J’aligne architectures et bonnes pratiques sur un ou plusieurs projets,
+          je fais monter les équipes, et je reste un contributeur actif au code.
+        </p>
+        <ul class="points">
+          <li>
+            Cohérence TypeScript entre projets : typage, tests, clean code,
+            standards et architecture.
+          </li>
+          <li>Accompagnement et montée en compétence des équipes de développement.</li>
+          <li>
+            Attachement au TDD et au typage robuste ; les tests comme exigence de
+            qualité, pas comme option.
+          </li>
+          <li>
+            Intégration de boucles IA au cycle de développement (agents,
+            workflows), sur des bases de code existantes, avec vérification par
+            les tests.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Compétences</h2>
+        <div class="grid-2">
+          <div class="block">
+            <h3>Staff / Lead</h3>
+            <ul class="points">
+              <li>
+                Standards TypeScript, architecture, CI, revues — y compris en
+                transverse sur plusieurs projets.
+              </li>
+              <li>
+                Montée en compétence : pair programming, cadrage, arbitrage de la
+                stack.
+              </li>
+              <li>
+                Dans le code : je livre et reste contributeur, je ne me contente pas
+                de piloter.
+              </li>
+            </ul>
+          </div>
+          <div class="block">
+            <h3>Développement</h3>
+            <ul class="points">
+              <li>
+                Backend / frontend TypeScript (Node.js, Express, React, Vue, Next.js).
+              </li>
+              <li>Boucles IA (agents) avec vérification par les tests.</li>
+              <li>
+                APIs REST ou GraphQL, temps réel (WebSockets), cloud Azure et AWS.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Open source</h2>
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <span class="job-title">Lumpcode</span>
+            </div>
+            <div class="job-dates">
+              <a href="https://github.com/lumpcode/lumpcode">github.com/lumpcode</a>
+            </div>
+          </div>
+          <p>
+            CLI et librairie d’orchestration d’agents pour des campagnes de développement automatisées. <br>
+            Simple à mettre en place et a juste besoin de git pour fonctionner : ouvre en autonomie des PRs pour des migrations,
+            roadmaps, backlogs...
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Expérience</h2>
+
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <span class="job-title">Tech Lead</span>
+              <span class="job-meta"> — Keolis, Paris</span>
+            </div>
+            <div class="job-dates">Mai 2021 — Présent</div>
+          </div>
+          <p>
+            Responsable front et back (API) de l’application de suivi d’un réseau
+            de transport, structurante pour le groupe : fréquentation, avance/retard,
+            cartes interactives, rejeu d’une journée (véhicules animés sur la carte).
+          </p>
+          <p>
+            Destinée à des interlocuteurs critiques pour le groupe : importants
+            enjeux de fiabilité et de finition. Animations cartographiques :
+            questions de performance côté front.
+          </p>
+          <p>
+            Équipe de 4 développeurs web, en lien constant avec une équipe data sur DataBricks. Socle TypeScript,
+            Vue, Node.js.
+          </p>
+          <ul>
+            <li>
+              Architecture : mono-repo npm, Clean Architecture ; écriture des
+              pipelines CI/CD Azure DevOps.
+            </li>
+            <li>
+              Équipe : pair programming, code reviews, méthodologie agile (board
+              Azure DevOps).
+            </li>
+            <li>
+              Stack : TypeScript, Vue 3, Vite, GraphQL (Apollo), Mapbox, SQL.
+              Tests unitaires et e2e Cypress, coverage exigeant.
+            </li>
+            <li>
+              Boucles IA : mise en place pour accompagner l’équipe (refactoring,
+              évolutions), avec vérification par les tests.
+            </li>
+            <li>
+              Transverse : conseil ponctuel sur 3 autres projets (architecture,
+              pratiques).
+            </li>
+            <li>
+              Aussi : pipelines Databricks (Python), support DevOps Azure.
+            </li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <span class="job-title">Développeur Fullstack</span>
+              <span class="job-meta"> — ENGIE, Paris</span>
+            </div>
+            <div class="job-dates">Avril 2020 — Mai 2021</div>
+          </div>
+          <p>
+            Refonte d’une application B2B. Équipe de 6 développeurs, 1 QA et 1
+            DevOps. Front et back, participation à l’architecture.
+          </p>
+          <ul>
+            <li>
+              React, GraphQL (Apollo), Prisma, AWS Lambda. TDD. Authentification
+              OKTA.
+            </li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <span class="job-title">Développeur Fullstack</span>
+              <span class="job-meta"> — Meet My Mentor, Paris</span>
+            </div>
+            <div class="job-dates">Février 2020 — Avril 2020</div>
+          </div>
+          <p>
+            Développement complet (front, back, infra) d’une VOD de masterclasses
+            —
+            React, Next.js, GraphQL, MongoDB ; infra VOD AWS (S3, CloudFront,
+            Lambda).
+          </p>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <span class="job-title">Développeur Fullstack</span>
+              <span class="job-meta"> — Ville de Paris, Paris</span>
+            </div>
+            <div class="job-dates">Décembre 2019 — Février 2020</div>
+          </div>
+          <p>
+            Module de réservation Vue.js pour les Services Funéraires de la Ville
+            de Paris : carte Google Maps des agences, intégré au site en plugin
+            WordPress.
+          </p>
+        </article>
+
+        <article class="job">
+          <div class="job-head">
+            <div>
+              <span class="job-title">Co-fondateur &amp; CTO</span>
+              <span class="job-meta"> — Les Sherpas, Paris</span>
+            </div>
+            <div class="job-dates">Juin 2015 — Décembre 2019</div>
+          </div>
+          <p>
+            Conception et développement de la plateforme de cours particuliers en
+            ligne, avec marketplace de professeurs
+            (<a href="https://www.les-sherpas.co">les-sherpas.co</a>).
+          </p>
+          <ul>
+            <li>
+              Salle de classe temps réel : vidéo, tableau blanc, chat (Socket.io).
+            </li>
+            <li>
+              React / Next.js ; matching marketplace ; paiements Stripe Connect ;
+              API serverless AWS.
+            </li>
+            <li>
+              App mobile React Native ; management de 3 développeurs.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Formation</h2>
+        <article class="edu">
+          <div class="job-head">
+            <div>
+              <span class="job-title">Architecte au numérique</span>
+              <span class="job-meta"> — École 42, Paris</span>
+            </div>
+            <div class="job-dates">Sept. 2017 — Janv. 2020</div>
+          </div>
+        </article>
+        <article class="edu">
+          <div class="job-head">
+            <div>
+              <span class="job-title">Master in Management</span>
+              <span class="job-meta"> — ESCP, Paris</span>
+            </div>
+            <div class="job-dates">Sept. 2014 — Janv. 2020</div>
+          </div>
+          <p class="edu-detail">
+            Entrée après classe préparatoire ECS, lycée Carnot (Paris). Option
+            entrepreneuriat.
+          </p>
+        </article>
+        <article class="edu">
+          <div class="job-head">
+            <div>
+              <span class="job-title">Licence 3 Mathématiques et Probabilités</span>
+              <span class="job-meta"> — Université Paris Sorbonne, Paris</span>
+            </div>
+            <div class="job-dates">Sept. 2014 — Sept. 2015</div>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <p class="hint">
+      Pour la photo : le fichier <code>photoDS.jpg</code> est chargé automatiquement.
+      Pour le PDF : ouvrez ce fichier dans Chrome puis Fichier → Imprimer →
+      Enregistrer au format PDF (marges « Aucune », arrière-plans activés).
+    </p>
+
+    <script>
+      (function () {
+        var wrap = document.getElementById("photo");
+        var img = wrap.querySelector("img");
+        function showPlaceholder() {
+          wrap.classList.add("empty");
+        }
+        img.addEventListener("error", showPlaceholder);
+        img.addEventListener("load", function () {
+          wrap.classList.remove("empty");
+        });
+        if (img.complete && (!img.naturalWidth || img.naturalWidth === 0)) {
+          showPlaceholder();
+        }
+      })();
+    </script>
+  </body>
+</html>
