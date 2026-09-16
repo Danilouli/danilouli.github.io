@@ -4,3 +4,8 @@ IDEAS.md
 canvases/
 .cursor/
 searches
+.lumpcode/**/contextStatusRecord.json
+.lumpcode/**/history/
+.lumpcode/worktrees/
+.lumpcode/.cache/
+.lumpcode/local.json

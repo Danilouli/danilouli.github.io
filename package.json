@@ -1,0 +1,8 @@
+{
+  "name": "danilouli-github-io",
+  "private": true,
+  "dependencies": {
+    "@lumpcode/cli-utils": "^0.5.0",
+    "@lumpcode/recipes": "^0.5.0"
+  }
+}
