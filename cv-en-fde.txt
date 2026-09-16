@@ -1,0 +1,67 @@
+Daniel Saadia
+Tech Lead — client-facing product engineering
+Paris, France · French · English
+danielsaadia@dyod.io
++33 6 11 37 18 03
+linkedin.com/in/dsaadia
+x.com/ddyods
+github.com/lumpcode/lumpcode
+
+PROFILE
+
+ESCP Master in Management × École 42. Building software since 2015. I embed in client organizations, own 0-to-1 products used in operations, and sit at the business / engineering interface. TypeScript in production; Python and SQL on Databricks. I lead small teams, stay in the code, and built Lumpcode, a git-first agent orchestration CLI.
+
+SKILLS
+
+Lead
+- Client-facing delivery: scoping, stakeholders, business / tech interface.
+- Architecture, CI, reviews — including across projects.
+- Grow teams (pairing, practices); still ship.
+
+Engineering
+- TypeScript in production (Node.js, React, Vue, Next.js). Vue.js Certified Senior Developer. REST / GraphQL, Azure and AWS. Docker.
+- Python and SQL: Databricks at Keolis; LangChain, RAG; PyTorch, Numba.
+- Agentic software: Lumpcode (git-first orchestration).
+
+OPEN SOURCE
+
+Lumpcode — github.com/lumpcode/lumpcode
+Git-first agent orchestration CLI: git is the only gate and source of truth. Agents open PRs on their own for migrations, roadmaps, backlogs — built for developers.
+
+EXPERIENCE
+
+Tech Lead — Keolis (SNCF subsidiary — France's public railway), Paris
+May 2021 — Present
+Joined as senior; team Tech Lead after a year, through delivery.
+
+Owner of the frontend and API for a transport-network monitoring app built from scratch. Used daily by 10+ city networks (Bordeaux, Orléans, Besançon…; 10–80 operators per network) and by marketing to win tenders: ridership, punctuality, interactive maps, full-day replay.
+
+Business-critical: high bar on reliability and finish; map animations are a frontend performance constraint. Team of 4 web developers, working closely with a Databricks data team.
+- Architecture: npm monorepo, Clean Architecture; Azure DevOps CI/CD. TypeScript, Vue 3, Node.js, Vite, GraphQL (Apollo), Mapbox, SQL; unit tests and Cypress e2e. Docker for test environments.
+- Team: pair programming, code reviews; occasional advisory on 3 other projects (architecture, practices).
+- LangChain + RAG agent (prompt-to-indicator): custom indicators from a user prompt. Python / SQL on Databricks. AI also in the engineering loop (fixes, refactors, cleanup) through to production.
+
+Full-Stack Developer — ENGIE, Paris
+April 2020 — May 2021
+B2B application rewrite. Team of 6 developers, 1 QA, and 1 DevOps. Frontend and backend (React, GraphQL, Prisma, AWS Lambda, OKTA); TDD; AWS architecture and client sprint reviews.
+
+Other freelance work — Paris
+Dec. 2019 — Apr. 2020
+Meet My Mentor: end-to-end build of a masterclass VOD, shipped to production — React, Next.js, GraphQL, MongoDB; AWS (S3, CloudFront, Lambda). City of Paris: Vue.js frontend for the funeral-services booking module.
+
+Co-founder & CTO — Les Sherpas, Paris
+June 2015 — December 2019
+Designed and built end to end the site, the marketplace, and an online tutoring platform: 500+ teachers, 1,000+ students tutored (les-sherpas.co).
+- Realtime classroom: video, shared whiteboard, text editor, chat (Socket.io). Marketplace matching; Stripe Connect payments; serverless AWS API.
+- React / Next.js; React Native mobile app; managed 3 developers on all product development.
+
+EDUCATION
+
+Master in Management — ESCP, Paris (ECS prépa, Lycée Carnot)
+Sept. 2014 — Jan. 2020
+
+École 42 — software architecture program, Paris
+Sept. 2017 — Jan. 2020
+
+Licence 3, Mathematics and Probability — Université Paris Sorbonne, Paris
+Sept. 2014 — Sept. 2015

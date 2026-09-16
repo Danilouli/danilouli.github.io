@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daniel Saadia — Staff Engineer &amp; Tech Lead</title>
+    <title>Daniel Saadia — Tech Lead</title>
     <style>
       :root {
         --ink: #1a1a1a;
@@ -24,7 +24,7 @@
         color: var(--ink);
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 10pt;
-        line-height: 1.38;
+        line-height: 1.32;
         -webkit-font-smoothing: antialiased;
       }
 
@@ -32,7 +32,7 @@
         width: 210mm;
         min-height: 297mm;
         margin: 0 auto;
-        padding: 14mm 16mm 16mm;
+        padding: 12mm 16mm 12mm;
         background: #fff;
       }
 
@@ -98,9 +98,9 @@
       }
 
       .photo {
-        flex: 0 0 28mm;
-        width: 28mm;
-        height: 36mm;
+        flex: 0 0 26mm;
+        width: 26mm;
+        height: 32mm;
         overflow: hidden;
         background: var(--photo-bg);
         border: 1px solid var(--line);
@@ -131,11 +131,11 @@
 
       /* Sections */
       section {
-        margin-top: 11px;
+        margin-top: 6px;
       }
 
       h2 {
-        margin-bottom: 6px;
+        margin-bottom: 4px;
         padding-bottom: 2px;
         border-bottom: 1px solid var(--line);
         color: var(--ink);
@@ -176,7 +176,7 @@
 
       /* Jobs */
       .job {
-        margin-bottom: 9px;
+        margin-bottom: 5px;
       }
 
       .job:last-child {
@@ -225,7 +225,7 @@
       }
 
       .edu {
-        margin-bottom: 6px;
+        margin-bottom: 3px;
       }
 
       .edu:last-child {
@@ -262,7 +262,6 @@
         }
 
         .job,
-        .edu,
         .block {
           break-inside: avoid;
         }
@@ -270,7 +269,7 @@
 
       @page {
         size: A4;
-        margin: 12mm 14mm 14mm;
+        margin: 7mm 13mm 7mm;
       }
     </style>
   </head>
@@ -279,9 +278,9 @@
       <header>
         <div class="identity">
           <h1>Daniel Saadia</h1>
-          <p class="role">Staff Engineer &amp; Tech Lead</p>
+          <p class="role">Tech Lead</p>
           <p class="contacts">
-            Paris, France<br />
+            Paris, France · French · English<br />
             <a href="mailto:danielsaadia@dyod.io">danielsaadia@dyod.io</a>
             ·
             <a href="tel:+33611371803">+33 6 11 37 18 03</a><br />
@@ -289,7 +288,7 @@
             ·
             <a href="https://x.com/ddyods">x.com/ddyods</a>
             ·
-            <a href="https://github.com/lumpcode/lumpcode">github.com/lumpcode</a>
+            <a href="https://github.com/lumpcode/lumpcode">github.com/lumpcode/lumpcode</a>
           </p>
         </div>
         <div class="photo" id="photo">
@@ -301,42 +300,26 @@
       <section>
         <h2>Profile</h2>
         <p class="lead">
-          Staff Engineer and TypeScript Tech Lead, building software since 2015.
+          TypeScript Tech Lead, building software since 2015.
           I align architecture and engineering practices across one or more
           projects, grow teams, and stay a hands-on contributor.
         </p>
-        <ul class="points">
-          <li>
-            TypeScript consistency across projects: typing, tests, clean code,
-            standards, and architecture.
-          </li>
-          <li>Coaching and upskilling engineering teams.</li>
-          <li>
-            Strong focus on TDD and sound typing; tests as a quality bar, not an
-            afterthought.
-          </li>
-          <li>
-            AI loops in the development cycle (agents, workflows), on existing
-            codebases, verified by tests.
-          </li>
-        </ul>
       </section>
 
       <section>
         <h2>Skills</h2>
         <div class="grid-2">
           <div class="block">
-            <h3>Staff / Lead</h3>
+            <h3>Lead</h3>
             <ul class="points">
               <li>
-                TypeScript standards, architecture, CI, reviews — including
-                across multiple projects.
+                Architecture, CI, reviews — including across projects.
               </li>
               <li>
                 Upskilling: pair programming, scoping, stack decisions.
               </li>
               <li>
-                Hands-on: I ship. I don’t just steer.
+                In the code: I ship and stay a contributor.
               </li>
             </ul>
           </div>
@@ -345,11 +328,11 @@
             <ul class="points">
               <li>
                 TypeScript backend / frontend (Node.js, Express, React, Vue,
-                Next.js).
+                Next.js). Vue.js Certified Senior Developer.
               </li>
-              <li>AI loops (agents) verified by tests.</li>
               <li>
                 REST or GraphQL APIs, realtime (WebSockets), Azure and AWS.
+                Docker.
               </li>
             </ul>
           </div>
@@ -364,14 +347,12 @@
               <span class="job-title">Lumpcode</span>
             </div>
             <div class="job-dates">
-              <a href="https://github.com/lumpcode/lumpcode">github.com/lumpcode</a>
+              <a href="https://github.com/lumpcode/lumpcode">github.com/lumpcode/lumpcode</a>
             </div>
           </div>
           <p>
-            CLI and library for agent orchestration in automated development
-            campaigns.<br />
-            Simple to set up and git-native: opens PRs on its own for
-            migrations, roadmaps, backlogs, and more.
+            Git-first agent orchestration CLI: git is the only gate. Opens PRs
+            on its own for migrations, roadmaps, backlogs.
           </p>
         </article>
       </section>
@@ -383,47 +364,39 @@
           <div class="job-head">
             <div>
               <span class="job-title">Tech Lead</span>
-              <span class="job-meta"> — Keolis, Paris</span>
+              <span class="job-meta"> — Keolis (SNCF subsidiary — France's public railway), Paris</span>
             </div>
             <div class="job-dates">May 2021 — Present</div>
           </div>
           <p>
-            Owner of the frontend and backend (API) for a transport-network
-            monitoring app, a core tool for the group: ridership, early/late
-            running, interactive maps, full-day replay (animated vehicles on the
-            map).
+            Joined as senior; team Tech Lead after a year.
           </p>
           <p>
-            Used by stakeholders critical to the group: reliability and polish
-            are non-negotiable. Map animations: frontend performance
-            constraints.
+            Owner of the frontend and API for a transport-network monitoring app
+            built from scratch. Used daily by 10+ city networks (Bordeaux,
+            Orléans, Besançon…; 10–80 operators per network) and by marketing to
+            win tenders: ridership, punctuality, interactive maps, full-day
+            replay.
           </p>
           <p>
-            Team of 4 web developers, working closely with a Databricks data
-            team. Core stack: TypeScript, Vue, Node.js.
+            Business-critical: high bar on reliability and finish; map
+            animations are a frontend performance constraint. Team of 4 web
+            developers, working closely with a Databricks data team.
           </p>
           <ul>
             <li>
-              Architecture: npm monorepo, Clean Architecture; wrote Azure DevOps
-              CI/CD pipelines.
+              Architecture: npm monorepo, Clean Architecture; Azure DevOps
+              CI/CD. TypeScript, Vue 3, Node.js, Vite, GraphQL (Apollo), Mapbox,
+              SQL; unit tests and Cypress e2e. Docker for test environments.
             </li>
             <li>
-              Team: pair programming, code reviews, agile (Azure DevOps board).
+              Team: pair programming, code reviews; occasional advisory on
+              3 other projects (architecture, practices).
             </li>
             <li>
-              Stack: TypeScript, Vue 3, Vite, GraphQL (Apollo), Mapbox, SQL.
-              Unit tests and Cypress e2e, strict coverage.
-            </li>
-            <li>
-              AI loops: set up to support the team (refactoring, evolution),
-              verified by tests.
-            </li>
-            <li>
-              Cross-cutting: occasional advisory on 3 other projects
-              (architecture, practices).
-            </li>
-            <li>
-              Also: Databricks pipelines (Python), Azure DevOps support.
+              LangChain + RAG agent (prompt-to-indicator): custom indicators
+              from a user prompt. AI also in the engineering loop (fixes,
+              refactors, cleanup) through to production.
             </li>
           </ul>
         </article>
@@ -438,42 +411,28 @@
           </div>
           <p>
             B2B application rewrite. Team of 6 developers, 1 QA, and 1 DevOps.
-            Frontend and backend, contributing to architecture.
-          </p>
-          <ul>
-            <li>
-              React, GraphQL (Apollo), Prisma, AWS Lambda. TDD. OKTA
-              authentication.
-            </li>
-          </ul>
-        </article>
-
-        <article class="job">
-          <div class="job-head">
-            <div>
-              <span class="job-title">Full-Stack Developer</span>
-              <span class="job-meta"> — Meet My Mentor, Paris</span>
-            </div>
-            <div class="job-dates">February 2020 — April 2020</div>
-          </div>
-          <p>
-            End-to-end build (frontend, backend, infra) of a masterclass VOD —
-            React, Next.js, GraphQL, MongoDB; AWS VOD infra (S3, CloudFront,
-            Lambda).
+            Frontend and backend (React, GraphQL, Prisma, AWS Lambda, OKTA);
+            TDD (Jest, Testing Library); AWS architecture and client sprint
+            reviews.
           </p>
         </article>
 
         <article class="job">
           <div class="job-head">
             <div>
-              <span class="job-title">Full-Stack Developer</span>
-              <span class="job-meta"> — City of Paris, Paris</span>
+              <span class="job-title">Other freelance work</span>
+              <span class="job-meta"> — Paris</span>
             </div>
-            <div class="job-dates">December 2019 — February 2020</div>
+            <div class="job-dates">Dec. 2019 — Apr. 2020</div>
           </div>
           <p>
-            Vue.js booking module for the City of Paris funeral services: Google
-            Maps of agencies, shipped as a WordPress plugin.
+            Meet My Mentor: end-to-end build (frontend, backend, infra) of a
+            masterclass VOD, shipped to production — React, Next.js, GraphQL,
+            MongoDB; AWS (S3, CloudFront, Lambda).
+          </p>
+          <p>
+            City of Paris: Vue.js frontend for the funeral-services booking
+            module — Google Maps of agencies, WordPress plugin.
           </p>
         </article>
 
@@ -486,20 +445,22 @@
             <div class="job-dates">June 2015 — December 2019</div>
           </div>
           <p>
-            Designed and built an online tutoring platform with a teacher
-            marketplace
+            Designed and built end to end the site, the marketplace, and an
+            online tutoring platform: 500+ teachers, 1,000+ students tutored
             (<a href="https://www.les-sherpas.co">les-sherpas.co</a>).
           </p>
           <ul>
             <li>
-              Realtime classroom: video, whiteboard, chat (Socket.io).
+              Realtime classroom: video, shared whiteboard, text editor, chat
+              (Socket.io).
             </li>
             <li>
-              React / Next.js; marketplace matching; Stripe Connect payments;
-              serverless AWS API.
+              Marketplace matching and ranking; Stripe Connect payments (teacher
+              accounts, 3D Secure); serverless AWS API.
             </li>
             <li>
-              React Native mobile app; managed 3 developers.
+              React / Next.js; React Native mobile app; managed 3 developers on
+              all product development.
             </li>
           </ul>
         </article>
@@ -510,8 +471,8 @@
         <article class="edu">
           <div class="job-head">
             <div>
-              <span class="job-title">Digital Architect</span>
-              <span class="job-meta"> — École 42, Paris</span>
+              <span class="job-title">École 42</span>
+              <span class="job-meta"> — Paris</span>
             </div>
             <div class="job-dates">Sept. 2017 — Jan. 2020</div>
           </div>
@@ -520,14 +481,10 @@
           <div class="job-head">
             <div>
               <span class="job-title">Master in Management</span>
-              <span class="job-meta"> — ESCP, Paris</span>
+              <span class="job-meta"> — ESCP, Paris (ECS prépa, Lycée Carnot)</span>
             </div>
             <div class="job-dates">Sept. 2014 — Jan. 2020</div>
           </div>
-          <p class="edu-detail">
-            Admitted after ECS preparatory class, Lycée Carnot (Paris).
-            Entrepreneurship track.
-          </p>
         </article>
         <article class="edu">
           <div class="job-head">

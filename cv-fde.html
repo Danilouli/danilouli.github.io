@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Daniel Saadia — Tech Lead TypeScript</title>
+    <title>Daniel Saadia — Tech Lead</title>
     <style>
       :root {
         --ink: #1a1a1a;
@@ -24,7 +24,7 @@
         color: var(--ink);
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 10pt;
-        line-height: 1.32;
+        line-height: 1.28;
         -webkit-font-smoothing: antialiased;
       }
 
@@ -131,7 +131,7 @@
 
       /* Sections */
       section {
-        margin-top: 6px;
+        margin-top: 4px;
       }
 
       h2 {
@@ -269,7 +269,7 @@
 
       @page {
         size: A4;
-        margin: 7mm 13mm 7mm;
+        margin: 6mm 13mm 4mm;
       }
     </style>
   </head>
@@ -278,7 +278,7 @@
       <header>
         <div class="identity">
           <h1>Daniel Saadia</h1>
-          <p class="role">Tech Lead TypeScript</p>
+          <p class="role">Tech Lead — ingénierie produit côté client</p>
           <p class="contacts">
             Paris, France · Français · Anglais<br />
             <a href="mailto:danielsaadia@dyod.io">danielsaadia@dyod.io</a>
@@ -300,10 +300,10 @@
       <section>
         <h2>Présentation</h2>
         <p class="lead">
-          Tech Lead freelance, je construis en full stack dans l’écosystème TypeScript
-          depuis 2015. J’aligne architecture et pratiques sur un ou plusieurs
-          projets, je fais monter les équipes, et je reste un contributeur
-          actif au code.
+          ESCP Master in Management × École 42. Je développe depuis 2015. J’interviens chez le client, à l’interface
+          métier / technique. Je mène les équipes de développement tout en restant dans le code.<br />
+          Je construis et maintiens Lumpcode, un CLI et librairie open source
+          d’orchestration d’agents git-first.
         </p>
       </section>
 
@@ -314,14 +314,15 @@
             <h3>Lead</h3>
             <ul class="points">
               <li>
+                Côté client : cadrage, parties prenantes, interface métier /
+                technique.
+              </li>
+              <li>
                 Architecture, CI, revues — y compris en transverse.
               </li>
               <li>
-                Montée en compétence : pair programming, cadrage, arbitrage de
-                la stack.
-              </li>
-              <li>
-                Dans le code : je livre et reste contributeur.
+                Faire monter les équipes (pair, pratiques) ; je livre et je
+                code encore.
               </li>
             </ul>
           </div>
@@ -329,12 +330,14 @@
             <h3>Développement</h3>
             <ul class="points">
               <li>
-                Backend / frontend TypeScript (Node.js, Express, React, Vue, Next.js).
-                Certifié Vue.js Senior Developer.
+                TypeScript : Node.js, React, Vue, Next.js. Certifié Vue.js
+                Senior Developer. REST / GraphQL, Azure et AWS. Docker.
               </li>
               <li>
-                APIs REST ou GraphQL, temps réel (WebSockets), Azure et AWS.
-                Docker.
+                Python et SQL : Databricks ; LangChain, RAG ; PyTorch, Numba.
+              </li>
+              <li>
+                CLI open source de boucles agentiques : Lumpcode (git-first).
               </li>
             </ul>
           </div>
@@ -353,8 +356,9 @@
             </div>
           </div>
           <p>
-            CLI d’orchestration d’agents, git-first : n’a besoin que de git.
-            Ouvre des PRs en autonomie pour des migrations, roadmaps, backlogs.
+            CLI d’orchestration d’agents, git-first : n’a besoin que de git,
+            qui reste la source de vérité. Ouvre des PRs en autonomie pour des
+            migrations, roadmaps, backlogs.
           </p>
         </article>
       </section>
@@ -382,24 +386,25 @@
           </p>
           <p>
             Usage critique : exigence de fiabilité et de finition ; animations
-            cartographiques, contraintes de perf front.
-            Équipe de 4 développeurs web, en lien avec une équipe data Databricks.
+            cartographiques, contraintes de perf front. Équipe de 4
+            développeurs web, en lien avec une équipe data Databricks.
+            Qualité de code exigente (coverage et quality gate SonarQube).
           </p>
           <ul>
             <li>
-              Architecture : mono-repo npm, Clean Architecture ; pipelines
-              CI/CD Azure DevOps. TypeScript, Vue 3, Node.js, Vite, GraphQL
-              (Apollo), Mapbox, SQL ; tests unitaires et e2e Cypress. Docker
-              pour les environnements de test.
+              Architecture : mono-repo npm, Clean Architecture, CI/CD Azure
+              DevOps, SonarQube. TypeScript, Node.js, Vue 3, Mapbox, GraphQL,
+              Databricks SQL ; tests unitaires et e2e (Cypress). Docker pour
+              les environnements de test.
             </li>
             <li>
-              Équipe : pair programming, code reviews ; conseil ponctuel sur
+              Équipe : pair programming, code reviews. Conseil ponctuel sur
               3 autres projets (architecture, pratiques).
             </li>
             <li>
               Agent LangChain + RAG (prompt-to-indicator) : indicateurs custom
-              depuis un prompt utilisateur. Boucles IA aussi dans le cycle de
-              dev (correctifs, refactoring, nettoyage) jusqu’à la prod.
+              depuis un prompt. Python / SQL Databricks. Boucles IA aussi
+              jusqu’à la prod (correctifs, refactoring, nettoyage).
             </li>
           </ul>
         </article>
@@ -415,8 +420,7 @@
           <p>
             Refonte d’une application B2B. Équipe de 6 développeurs, 1 QA et 1
             DevOps. Front et back (React, GraphQL, Prisma, AWS Lambda, OKTA) ;
-            TDD (Jest, Testing Library) ; architecture AWS et revues de sprint
-            client.
+            TDD ; architecture AWS et revues de sprint client.
           </p>
         </article>
 
@@ -429,13 +433,11 @@
             <div class="job-dates">Déc. 2019 — Avr. 2020</div>
           </div>
           <p>
-            Meet My Mentor : build complet (front, back, infra) d’une VOD de
-            masterclasses, livrée en production — React, Next.js, GraphQL,
-            MongoDB ; AWS (S3, CloudFront, Lambda).
-          </p>
-          <p>
-            Ville de Paris : frontend Vue.js du module de réservation des
-            Services Funéraires — carte Google Maps, plugin WordPress.
+            Meet My Mentor : build complet d’une VOD de masterclasses, livrée
+            en production — React, Next.js, GraphQL, MongoDB ; AWS (S3,
+            CloudFront, Lambda). Ville de
+            Paris : frontend Vue.js du module de réservation des Services
+            Funéraires.
           </p>
         </article>
 
@@ -455,12 +457,9 @@
           </p>
           <ul>
             <li>
-              Salle de classe temps réel : vidéo, tableau blanc partagé, éditeur
-              de texte, chat (Socket.io).
-            </li>
-            <li>
-              Matching et classement marketplace ; paiements Stripe Connect
-              (comptes professeurs, 3D Secure) ; API serverless AWS.
+              Salle de classe temps réel : vidéo, tableau blanc partagé,
+              éditeur de texte, chat (Socket.io). Matching marketplace ;
+              paiements Stripe Connect ; API serverless AWS.
             </li>
             <li>
               React / Next.js ; app mobile React Native ; management de 3
@@ -475,19 +474,19 @@
         <article class="edu">
           <div class="job-head">
             <div>
-              <span class="job-title">Architecte au numérique</span>
-              <span class="job-meta"> — École 42, Paris</span>
+              <span class="job-title">Master in Management</span>
+              <span class="job-meta"> — ESCP, Paris (prépa ECS, lycée Carnot)</span>
             </div>
-            <div class="job-dates">Sept. 2017 — Janv. 2020</div>
+            <div class="job-dates">Sept. 2014 — Janv. 2020</div>
           </div>
         </article>
         <article class="edu">
           <div class="job-head">
             <div>
-              <span class="job-title">Master in Management</span>
-              <span class="job-meta"> — ESCP, Paris (prépa ECS, lycée Carnot)</span>
+              <span class="job-title">Architecte au numérique</span>
+              <span class="job-meta"> — École 42, Paris</span>
             </div>
-            <div class="job-dates">Sept. 2014 — Janv. 2020</div>
+            <div class="job-dates">Sept. 2017 — Janv. 2020</div>
           </div>
         </article>
         <article class="edu">
@@ -501,7 +500,13 @@
         </article>
       </section>
     </div>
-    
+
+    <p class="hint">
+      Copie ciblée FDE (BCG X / H Company). Ne pas fusionner dans
+      <code>index.html</code>. PDF :
+      <code>./export-pdf.sh cv-fde</code>
+    </p>
+
     <script>
       (function () {
         var wrap = document.getElementById("photo");

@@ -9,3 +9,4 @@ searches
 .lumpcode/worktrees/
 .lumpcode/.cache/
 .lumpcode/local.json
+node_modules/ 

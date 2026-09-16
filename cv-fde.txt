@@ -1,0 +1,68 @@
+Daniel Saadia
+Tech Lead — ingénierie produit côté client
+Paris, France · Français · Anglais
+danielsaadia@dyod.io
++33 6 11 37 18 03
+linkedin.com/in/dsaadia
+x.com/ddyods
+github.com/lumpcode/lumpcode
+
+PRÉSENTATION
+
+ESCP Master in Management × École 42. Je développe depuis 2015. J’interviens chez le client, à l’interface métier / technique. Je mène les équipes de développement tout en restant dans le code.
+Je construis et maintiens Lumpcode, un CLI et librairie open source d’orchestration d’agents git-first.
+
+COMPÉTENCES
+
+Lead
+- Côté client : cadrage, parties prenantes, interface métier / technique.
+- Architecture, CI, revues — y compris en transverse.
+- Faire monter les équipes (pair, pratiques) ; je livre et je code encore.
+
+Développement
+- TypeScript : Node.js, React, Vue, Next.js. Certifié Vue.js Senior Developer. REST / GraphQL, Azure et AWS. Docker.
+- Python et SQL : Databricks ; LangChain, RAG ; PyTorch, Numba.
+- CLI open source de boucles agentiques : Lumpcode (git-first).
+
+OPEN SOURCE
+
+Lumpcode — github.com/lumpcode/lumpcode
+CLI d’orchestration d’agents, git-first : n’a besoin que de git, qui reste la source de vérité. Ouvre des PRs en autonomie pour des migrations, roadmaps, backlogs.
+
+EXPÉRIENCE
+
+Tech Lead — Keolis, Paris
+Mai 2021 — Présent
+Arrivé en senior ; Tech Lead de l’équipe au bout d’un an.
+
+Responsable front et API d’une application de suivi de réseau de transport, développée de zéro. Utilisée chaque jour par plus de 10 réseaux (Bordeaux, Orléans, Besançon… ; 10 à 80 opérateurs par réseau) et par le marketing pour les appels d’offres : fréquentation, ponctualité, cartes interactives, rejeu d’une journée.
+
+Usage critique : exigence de fiabilité et de finition ; animations cartographiques, contraintes de perf front. Équipe de 4 développeurs web, en lien avec une équipe data Databricks. Qualité de code exigente (coverage et quality gate SonarQube).
+- Architecture : mono-repo npm, Clean Architecture, CI/CD Azure DevOps, SonarQube. TypeScript, Node.js, Vue 3, Mapbox, GraphQL, Databricks SQL ; tests unitaires et e2e (Cypress). Docker pour les environnements de test.
+- Équipe : pair programming, code reviews. Conseil ponctuel sur 3 autres projets (architecture, pratiques).
+- Agent LangChain + RAG (prompt-to-indicator) : indicateurs custom depuis un prompt. Python / SQL Databricks. Boucles IA aussi jusqu’à la prod (correctifs, refactoring, nettoyage).
+
+Développeur Fullstack — ENGIE, Paris
+Avril 2020 — Mai 2021
+Refonte d’une application B2B. Équipe de 6 développeurs, 1 QA et 1 DevOps. Front et back (React, GraphQL, Prisma, AWS Lambda, OKTA) ; TDD ; architecture AWS et revues de sprint client.
+
+Autres missions freelance — Paris
+Déc. 2019 — Avr. 2020
+Meet My Mentor : build complet d’une VOD de masterclasses, livrée en production — React, Next.js, GraphQL, MongoDB ; AWS (S3, CloudFront, Lambda). Ville de Paris : frontend Vue.js du module de réservation des Services Funéraires.
+
+Co-fondateur & CTO — Les Sherpas, Paris
+Juin 2015 — Décembre 2019
+Conception et développement de bout en bout du site, de la marketplace et d’une plateforme de cours particuliers en ligne : 500+ professeurs, plus de 1 000 élèves accompagnés (les-sherpas.co).
+- Salle de classe temps réel : vidéo, tableau blanc partagé, éditeur de texte, chat (Socket.io). Matching marketplace ; paiements Stripe Connect ; API serverless AWS.
+- React / Next.js ; app mobile React Native ; management de 3 développeurs sur tout le développement produit.
+
+FORMATION
+
+Master in Management — ESCP, Paris (prépa ECS, lycée Carnot)
+Sept. 2014 — Janv. 2020
+
+Architecte au numérique — École 42, Paris
+Sept. 2017 — Janv. 2020
+
+Licence 3 Mathématiques et Probabilités — Université Paris Sorbonne, Paris
+Sept. 2014 — Sept. 2015

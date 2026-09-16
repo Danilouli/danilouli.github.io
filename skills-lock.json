@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "lumpcode": {
+      "source": "lumpcode/skills",
+      "sourceType": "github",
+      "skillPath": "skills/lumpcode/SKILL.md",
+      "computedHash": "c152b385648f2864aeff9d8fb6d70932cf328ceceb1d43520813f2b36efc1896"
+    }
+  }
+}
